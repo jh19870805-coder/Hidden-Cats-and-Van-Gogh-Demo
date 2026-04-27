@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68c46092bdaba14581cb8ced40435c6, type: 3}
+  m_Name: LanguageConfig
+  m_EditorClassIdentifier: 
+  languages:
+  - languageCode: en-US
+    displayName: English
+    displayNameEnglish: English
+  - languageCode: de-DE
+    displayName: Deutsch
+    displayNameEnglish: German
+  - languageCode: fr-FR
+    displayName: Français
+    displayNameEnglish: French
+  - languageCode: it-IT
+    displayName: Italiano
+    displayNameEnglish: Italian
+  - languageCode: ko-KR
+    displayName: 한국어
+    displayNameEnglish: Korean
+  - languageCode: es-ES
+    displayName: Español - España
+    displayNameEnglish: Spanish (Spain)
+  - languageCode: zh-CN
+    displayName: 简体中文
+    displayNameEnglish: Simplified Chinese
+  - languageCode: zh-TW
+    displayName: 繁體中文
+    displayNameEnglish: Traditional Chinese
+  - languageCode: ru-RU
+    displayName: Русский
+    displayNameEnglish: Russian
+  - languageCode: th-TH
+    displayName: ไทย
+    displayNameEnglish: Thai
+  - languageCode: ja-JP
+    displayName: 日本語
+    displayNameEnglish: Japanese
+  - languageCode: pt-PT
+    displayName: Português - Portugal
+    displayNameEnglish: Portuguese (Portugal)
+  - languageCode: pl-PL
+    displayName: Polski
+    displayNameEnglish: Polish
+  - languageCode: da-DK
+    displayName: Dansk
+    displayNameEnglish: Danish
+  - languageCode: nl-NL
+    displayName: Nederlands
+    displayNameEnglish: Dutch
+  - languageCode: fi-FI
+    displayName: Suomi
+    displayNameEnglish: Finnish
+  - languageCode: nb-NO
+    displayName: Norsk
+    displayNameEnglish: Norwegian
+  - languageCode: sv-SE
+    displayName: Svenska
+    displayNameEnglish: Swedish
+  - languageCode: hu-HU
+    displayName: Magyar
+    displayNameEnglish: Hungarian
+  - languageCode: cs-CZ
+    displayName: Čeština
+    displayNameEnglish: Czech
+  - languageCode: ro-RO
+    displayName: Română
+    displayNameEnglish: Romanian
+  - languageCode: tr-TR
+    displayName: Türkçe
+    displayNameEnglish: Turkish
+  - languageCode: pt-BR
+    displayName: Português - Brasil
+    displayNameEnglish: Portuguese (Brazil)
+  - languageCode: bg-BG
+    displayName: Български
+    displayNameEnglish: Bulgarian
+  - languageCode: el-GR
+    displayName: Ελληνικά
+    displayNameEnglish: Greek
+  - languageCode: uk-UA
+    displayName: Українська
+    displayNameEnglish: Ukrainian
+  - languageCode: es-419
+    displayName: Español - Latinoamérica
+    displayNameEnglish: Spanish (Latin America)
+  - languageCode: vi-VN
+    displayName: Tiếng Việt
+    displayNameEnglish: Vietnamese
+  - languageCode: id-ID
+    displayName: Bahasa Indonesia
+    displayNameEnglish: Indonesian
+  fallbackLanguageCode: en-US

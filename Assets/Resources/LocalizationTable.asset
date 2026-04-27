@@ -1,0 +1,495 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9, type: 3}
+  m_Name: LocalizationTable
+  m_EditorClassIdentifier: 
+  entries:
+  - key: smallgame.unlock_hint
+    cells:
+    - languageCode: zh-CN
+      text: "\u8FD8\u9700\u8981 {0}/{1} \u5757\u62FC\u56FE\u89E3\u9501"
+    - languageCode: en-US
+      text: "Need {0}/{1} puzzle pieces to unlock."
+    - languageCode: zh-TW
+      text: "\u9084\u9700\u8981 {0}/{1} \u584A\u62FC\u5716\u89E3\u9396"
+    - languageCode: de-DE
+      text: Es fehlen noch {0}/{1} Puzzleteile zum Freischalten.
+    - languageCode: fr-FR
+      text: Il manque encore {0}/{1} pi\u00E8ces de puzzle pour d\u00E9bloquer.
+    - languageCode: it-IT
+      text: Servono ancora {0}/{1} pezzi del puzzle per sbloccare.
+    - languageCode: ko-KR
+      text: "\uD574\uAE08\uAE4C\uC9C0 \uD37C\uC990 \uC870\uAC01 {0}/{1}\uAC1C\uAC00 \uB354 \uD544\uC694\uD569\uB2C8\uB2E4"
+    - languageCode: es-ES
+      text: "A\u00FAn faltan {0}/{1} piezas del puzle para desbloquear."
+    - languageCode: ru-RU
+      text: "\u041D\u0443\u0436\u043D\u043E \u0435\u0449\u0451 {0}/{1} \u0444\u0440\u0430\u0433\u043C\u0435\u043D\u0442\u043E\u0432 \u043F\u0430\u0437\u043B\u0430 \u0434\u043B\u044F \u0440\u0430\u0437\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u043A\u0438."
+    - languageCode: th-TH
+      text: "\u0E22\u0E31\u0E07\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E0A\u0E34\u0E49\u0E19\u0E1B\u0E23\u0E34\u0E28\u0E19\u0E32 {0}/{1} \u0E0A\u0E34\u0E49\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01"
+    - languageCode: ja-JP
+      text: "\u3042\u3068{0}/{1}\u679A\u306E\u30D1\u30BA\u30EB\u30D4\u30FC\u30B9\u304C\u5FC5\u8981\u3067\u3059"
+    - languageCode: pt-PT
+      text: "Ainda faltam {0}/{1} pe\u00E7as do puzzle para desbloquear."
+    - languageCode: pl-PL
+      text: "Potrzebujesz jeszcze {0}/{1} element\u00F3w uk\u0142adanki, aby odblokowa\u0107."
+    - languageCode: da-DK
+      text: "Der mangler stadig {0}/{1} puslespilsbrikker for at l\u00E5se op."
+    - languageCode: nl-NL
+      text: "Je hebt nog {0}/{1} puzzelstukken nodig om te ontgrendelen."
+    - languageCode: fi-FI
+      text: "Tarvitaan viel\u00E4 {0}/{1} palaa avaukseen."
+    - languageCode: nb-NO
+      text: "Du trenger fortsatt {0}/{1} puslespillbrikker for \u00E5 l\u00E5se opp."
+    - languageCode: sv-SE
+      text: "Du beh\u00F6ver fortfarande {0}/{1} pusselbitar f\u00F6r att l\u00E5sa upp."
+    - languageCode: hu-HU
+      text: "M\u00E9g {0}/{1} puzzle-darab kell a felold\u00E1shoz."
+    - languageCode: cs-CZ
+      text: "K odem\u010Den\u00ED je\u0161t\u011B chyb\u00ED {0}/{1} d\u00EDlk\u016F puzzle."
+    - languageCode: ro-RO
+      text: "Mai ai nevoie de {0}/{1} piese de puzzle pentru deblocare."
+    - languageCode: tr-TR
+      text: "Kilidini a\u00E7mak i\u00E7in h\u00E2l\u00E2 {0}/{1} yapboz par\u00E7as\u0131 gerekiyor."
+    - languageCode: pt-BR
+      text: "Ainda faltam {0}/{1} pe\u00E7as do quebra-cabe\u00E7a para liberar."
+    - languageCode: bg-BG
+      text: "\u041E\u0449\u0435 \u0441\u0430 \u043D\u0443\u0436\u043D\u0438 {0}/{1} \u0447\u0430\u0441\u0442\u0438 \u043E\u0442 \u043F\u044A\u0437\u0435\u043B\u0430 \u0437\u0430 \u043E\u0442\u043A\u043B\u044E\u0447\u0432\u0430\u043D\u0435."
+    - languageCode: el-GR
+      text: "\u03A7\u03C1\u03B5\u03B9\u03AC\u03B6\u03BF\u03BD\u03C4\u03B1\u03B9 \u03B1\u03BA\u03CC\u03BC\u03B1 {0}/{1} \u03BA\u03BF\u03BC\u03BC\u03AC\u03C4\u03B9\u03B1 \u03C0\u03B1\u03B6\u03BB \u03B3\u03B9\u03B1 \u03BE\u03B5\u03BA\u03BB\u03B5\u03AF\u03B4\u03C9\u03BC\u03B1."
+    - languageCode: uk-UA
+      text: "\u041F\u043E\u0442\u0440\u0456\u0431\u043D\u043E \u0449\u0435 {0}/{1} \u0444\u0440\u0430\u0433\u043C\u0435\u043D\u0442\u0456\u0432 \u043F\u0430\u0437\u043B\u0430 \u0434\u043B\u044F \u0440\u043E\u0437\u0431\u043B\u043E\u043A\u0443\u0432\u0430\u043D\u043D\u044F."
+    - languageCode: es-419
+      text: "Todav\u00EDa faltan {0}/{1} piezas del rompecabezas para desbloquear."
+    - languageCode: vi-VN
+      text: "C\u00F2n c\u1EA7n {0}/{1} m\u1EA3nh gh\u00E9p \u0111\u1EC3 m\u1EDF kh\u00F3a."
+    - languageCode: id-ID
+      text: "Masih perlu {0}/{1} keping puzzle untuk membuka."
+  - key: ui.main.door_tip
+    cells:
+    - languageCode: en-US
+      text: "My dear friend,\nI’m sorry I couldn’t wait for you — I had to go into town on urgent business. The door is unlocked; please come in and make yourself at home.\nThere are plenty of little rascals in the house; if you feel lonely, spend some time with them.\nBy the way, the unfinished puzzle on the chair by the window — they seem to have lost a few pieces. If you wouldn’t mind, please keep an eye out for them."
+    - languageCode: de-DE
+      text: "Mein lieber Freund,\nschade, dass ich nicht auf dich warten konnte — ich musste dringend in die Stadt. Die Tür ist nicht verschlossen; komm herein und fühl dich wie zu Hause.\nIm Haus gibt es jede Menge kleiner Schelme; wenn du dich einsam fühlst, vertreib dir die Zeit mit ihnen.\nÜbrigens: Das unvollständige Puzzle auf dem Stuhl am Fenster — ein paar Teile scheinen sie verloren zu haben. Wenn du magst, halte bitte Ausschau danach."
+    - languageCode: fr-FR
+      text: "Mon ami(e) chéri(e),\nje suis désolé(e) de ne pas t’avoir attendu(e) — je dois partir en ville pour une affaire urgente. La porte n’est pas verrouillée ; entre et fais comme chez toi.\nIl y a plein de petites friponnes dans la maison ; si tu t’ennuies, passe du temps avec elles.\nÀ propos : le puzzle inachevé sur la chaise près de la fenêtre — il semble qu’elles aient égaré quelques pièces. Si tu veux bien, garde l’œil ouvert."
+    - languageCode: it-IT
+      text: "Mio caro amico,\nmi dispiace non aver potuto aspettarti — devo correre in città per un affare urgente. La porta non è chiusa a chiave; entra pure e mettiti comodo.\nIn casa ci sono tanti piccoli birbanti; se ti senti solo, passa il tempo con loro.\nA proposito: il puzzle incompleto sulla sedia vicino alla finestra — sembra che abbiano smarrito qualche pezzo. Se vuoi, tieni d’occhio."
+    - languageCode: ko-KR
+      text: "친애하는 친구에게,\n미리 기다리지 못해 유감이야 — 급한 일로 마을에 다녀와야 해. 문은 잠그지 않았으니 집처럼 편히 들어와 앉아 있어.\n집에는 장난꾸러기 녀석들이 많아. 외롭다면 그들과 시간을 보내도 될 거야.\n참, 창가 의자 위 미완성 퍼즐 말이야 — 녀석들이 조각 몇 개를 잃어버린 것 같아. 괜찮다면 찾아줄 수 있을지 부탁할게."
+    - languageCode: es-ES
+      text: "Querido amigo:\nLamento no haberte esperado: debo ir al pueblo por un asunto urgente. La puerta no está cerrada con llave; entra y siéntete como en casa.\nHay muchos diablillos en la casa; si te sientes solo, pasa el rato con ellos.\nPor cierto: el puzle sin terminar en la silla junto a la ventana — parece que han perdido algunas piezas. Si puedes, échales un vistazo."
+    - languageCode: zh-CN
+      text: "我亲爱的朋友：\n真遗憾没能等到你，我先赶往小镇处理一件要事。房门未锁，请你就像回家一样，随意进来坐坐。\n屋里有很多小捣蛋鬼，你若觉得寂寥，不妨和它们一起打发时光。\n对了，窗边椅子上那幅未完成的拼图，似乎被它们弄丢了几片。如果你愿意，请帮我留意找寻。"
+    - languageCode: zh-TW
+      text: "親愛的朋友：\n很遺憾沒能等到你，我得先趕到小鎮處理要事。房門未鎖，請像回家一樣，隨意進來坐坐。\n屋裡有不少小搗蛋，若覺得寂寞，不妨與牠們作伴。\n對了，窗邊椅子上那幅未完成的拼圖，似乎被牠們弄丟了幾片。若你願意，請幫我留意尋找。"
+    - languageCode: ru-RU
+      text: "Мой дорогой друг,\nжаль, что не дождался тебя — мне срочно нужно в город. Дверь не заперта; заходи и чувствуй себя как дома.\nВ доме полно маленьких проказников; если станет одиноко, проведи время с ними.\nКстати, недоделанный пазл на стуле у окна — кажется, они потеряли несколько деталей. Если не сложно, поищи, пожалуйста."
+    - languageCode: th-TH
+      text: "เพื่อนที่รัก\nเสียใจที่รอเธอไม่ทัน — ฉันต้องรีบไปเมืองเรื่องด่วน ประตูไม่ได้ล็อก เข้ามานั่งได้เหมือนอยู่บ้าน\nในบ้านมีตัวซน ๆ เยอะ ถ้าเหงา ลองอยู่กับพวกมัน\nอ้อ ปริศนาที่ยังทำไม่เสร็จบนเก้าอี้ริมหน้าต่าง — ดูเหมือนพวกมันทำชิ้นหายไปหลายชิ้น ถ้าไม่รบกวน ช่วยช่วยมองหาให้หน่อย"
+    - languageCode: ja-JP
+      text: "親愛なる友人へ\n待てなくて残念だ — 急用で町へ行かなければならない。鍵はかけていないから、家のように気楽に上がってきて。\n家の中には小さないたずらっ子がたくさんいる。寂しければ一緒に過ごしてごらん。\nそうだ、窓際の椅子の上の未完成のパズル — ピースを何枚かなくしたみたい。よければ探してくれると嬉しい。"
+    - languageCode: pt-PT
+      text: "Meu querido amigo,\nlamento não ter podido esperar — tenho de ir à cidade por um assunto urgente. A porta não está trancada; entra e fica à vontade, como em casa.\nHá muitos diabretes pela casa; se te sentires sozinho, passa o tempo com eles.\nA propósito: o puzzle inacabado na cadeira junto à janela — parece que perderam algumas peças. Se puderes, ajuda-me a procurá-las."
+    - languageCode: pl-PL
+      text: "Drogi przyjacielu,\nżal, że nie zdążyłem na ciebie — muszę pilnie jechać do miasta. Drzwi nie są zamknięte na klucz; wejdź i czuj się jak w domu.\nW domu jest mnóstwo małych psotników; jeśli poczujesz się samotnie, spędź z nimi czas.\nA propos: niedokońana układanka na krześle przy oknie — zdają się zgubić kilka elementów. Jeśli możesz, rozejrzyj się za nimi."
+    - languageCode: da-DK
+      text: "Kære ven,\njeg beklager, at jeg ikke kunne vente — jeg må skynde mig til byen på vigtig ærinde. Døren er ikke låst; kom ind og føl dig hjemme.\nDer er masser af små drillenisser i huset; hvis du keder dig, så brug tid sammen med dem.\nFor resten: det ufærdige puslespil på stolen ved vinduet — det ser ud til, de har mistet nogle brikker. Hvis du vil, så hold udkig."
+    - languageCode: nl-NL
+      text: "Beste vriend,\nhet spijt me dat ik niet op je heb kunnen wachten — ik moet dringend naar de stad. De deur zit niet op slot; kom binnen en voel je thuis.\nEr zijn genoeg kleine stoute rakkers in huis; als je je eenzaam voelt, breng dan tijd met ze door.\nTrouwens: de onafgemaakte puzzel op de stoel bij het raam — ze lijken een paar stukjes kwijt te zijn. Als je wilt, kijk even uit."
+    - languageCode: fi-FI
+      text: "Rakas ystävä,\nharmi, etten ehtinyt odottaa — minun on mentävä kiireellisesti kaupunkiin. Ovi ei ole lukossa; tule sisään ja ole kuin kotona.\nTalossa on paljon pieniä veitikoita; jos ikävöit, vietä aikaa niiden kanssa.\nMuuten: ikkunan vieressä tuolilla oleva keskeneräinen palapeli — näyttää siltä, että he ovat kadottaneet muutaman palan. Jos jaksat, pidä silmät auki."
+    - languageCode: nb-NO
+      text: "Kjære venn,\njeg beklager at jeg ikke rakk å vente — jeg må skynde meg til byen på viktig ærend. Døren er ikke låst; kom inn og føl deg hjemme.\nDet er mange små rampete typer i huset; hvis du kjeder deg, tilbring tid med dem.\nForresten: det uferdige puslespillet på stolen ved vinduet — det ser ut som de har mistet noen brikker. Hvis du vil, hold utkikk."
+    - languageCode: sv-SE
+      text: "Käre vän,\njag hann tyvärr inte vänta — jag måste skynda till stan på ett viktigt ärende. Dörren är olåst; kom in och känn dig hemma.\nDet finns massor av små rackare i huset; om du känner dig ensam, umgås med dem.\nFörresten: det ofärdiga pusslet på stolen vid fönstret — de verkar ha tappat bort några bitar. Om du orkar, håll utkik."
+    - languageCode: hu-HU
+      text: "Kedves barátom,\nsajnálom, hogy nem tudtalak megvárni — sürgősen a városba kell mennem. Az ajtó nincs zárva; gyere be, és érezd otthon magad.\nRengeteg kis csínytevő van a házban; ha magányos vagy, tölts velük időt.\nEgyébként: a félkész puzzle a széken az ablaknál — úgy tűnik, néhány darabot elveszítettek. Ha tudod, szétnéznél."
+    - languageCode: cs-CZ
+      text: "Milý příteli,\nmrzí mě, že na tebe nemůžu počkat — musím spěchat do města kvůli naléhavé záležitosti. Dveře nejsou zamčené; pojď dál a chovej se jako doma.\nV domě je spousta malých nezbedů; pokud budeš mít smutno, stráv s nimi čas.\nMimochodem: nedodělané puzzle na židli u okna — vypadá to, že ztratili pár dílků. Kdybys mohl, dej prosím pozor."
+    - languageCode: ro-RO
+      text: "Dragă prietene,\nîmi pare rău că nu te-am putut aștepta — trebuie să plec urgent în oraș. Ușa nu e încuiată; intră și fii ca acasă.\nSunt o grămadă de micuți obraznici în casă; dacă te simți singur, petrece timp cu ei.\nApropo: puzzle-ul neterminat de pe scaunul de la fereastră — se pare că au pierdut câteva piese. Dacă poți, te rog caută."
+    - languageCode: tr-TR
+      text: "Sevgili dostum,\nseni bekleyemediğim için üzgünüm — acil bir iş için kasabaya gitmem gerekiyor. Kapı kilitli değil; içeri gel, kendi evinde gibi hisset.\nEvde bir sürü küçük yaramaz var; yalnız hissedersen onlarla vakit geçir.\nBu arada, pencere kenarındaki sandalyedeki bitmemiş yapboz — birkaç parçayı kaybetmişler gibi görünüyor. Mümkünse göz kulak ol."
+    - languageCode: pt-BR
+      text: "Querido amigo,\nsinto muito não ter podido esperar — preciso ir à cidade por um assunto urgente. A porta não está trancada; entra e fica à vontade, como em casa.\nTem um monte de pequenos arteiros na casa; se sentir solidão, passe o tempo com eles.\nAliás: o quebra-cabeça inacabado na cadeira perto da janela — parece que perderam algumas peças. Se puder, ajuda a procurar."
+    - languageCode: bg-BG
+      text: "Скъпи приятелю,\nсъжалявам, че не успях да те изчакам — трябва спешно да отида в града. Вратата не е заключена; влез и се чувствай като у дома.\nВ къщата има много малки палавници; ако ти е самотно, прекарай време с тях.\nМежду другото: недовършеният пъзел на стола до прозореца — изглежда са изгубили няколко части. Ако можеш, помогни да ги потърсиш."
+    - languageCode: el-GR
+      text: "Αγαπητέ φίλε,\nλυπάμαι που δεν πρόλαβα να σε περιμένω — πρέπει να πάω επειγόντως στην πόλη. Η πόρτα δεν είναι κλειδωμένη· μπες και νιώσε σαν στο σπίτι σου.\nΥπάρχουν πολλά μικρά σκανδαλιάρικα στο σπίτι· αν νιώσεις μοναξιά, πέρασε χρόνο μαζί τους.\nΠαρεμπιπτόντως: το ημιτελές παζλ στην καρέκλα δίπλα στο παράθυρο — φαίνεται ότι έχασαν μερικά κομμάτια. Αν μπορείς, κράτα τα μάτια σου ανοιχτά."
+    - languageCode: uk-UA
+      text: "Мій дорогий друже,\nшкода, що не зміг дочекатися — мені терміново треба в місто. Двері не зачинені; заходь і почувайся як вдома.\nУ домі повно маленьких проказників; якщо буде самотньо, проведи з ними час.\nДо речі: незавершений пазл на стільці біля вікна — здається, вони загубили кілька фрагментів. Якщо можеш, пошукай, будь ласка."
+    - languageCode: es-419
+      text: "Querido amigo:\nLamento no haberte esperado: tengo que ir al pueblo por un asunto urgente. La puerta no está con llave; entrá y sentite como en casa.\nHay muchos traviesos en la casa; si te sentís solo, pasá el rato con ellos.\nPor cierto: el rompecabezas sin terminar en la silla junto a la ventana — parece que perdieron algunas piezas. Si podés, ayudame a buscarlas."
+    - languageCode: vi-VN
+      text: "Bạn thân mến,\ntiếc là mình không đợi bạn kịp — mình phải vào thị trấn gấp vì việc quan trọng. Cửa không khóa; cứ vào và tự nhiên như ở nhà.\nTrong nhà có nhiều “quỷ nhỏ”; nếu thấy cô đơn, hãy chơi cùng chúng.\nNhân tiện: bức tranh ghép dở trên ghế cạnh cửa sổ — có vẻ chúng làm mất vài mảnh. Nếu bạn rảnh, giúp mình tìm nhé."
+    - languageCode: id-ID
+      text: "Sahabatku yang baik,\nmaaf aku tidak bisa menunggu — ada urusan mendesak ke kota. Pintu tidak dikunci; silakan masuk dan betah seperti di rumah sendiri.\nAda banyak si kecil yang nakal di rumah; jika merasa sepi, luangkan waktu bersama mereka.\nNgomong-ngomong, puzzle yang belum selesai di kursi dekat jendela — sepertinya mereka kehilangan beberapa keping. Kalau bisa, tolong cari ya."
+  - key: ui.main.trophy_lock_hint
+    cells:
+    - languageCode: en-US
+      text: Unlocked after clearing the puzzle game once.
+    - languageCode: zh-CN
+      text: "\u7B2C\u4E00\u6B21\u901A\u5173\u62FC\u56FE\u6E38\u620F\u540E\u89E3\u9501"
+    - languageCode: zh-TW
+      text: "\u9996\u6B21\u901A\u95DC\u62FC\u5716\u904A\u6232\u5F8C\u89E3\u9396"
+    - languageCode: de-DE
+      text: Freigeschaltet nach dem ersten Abschluss des Spiels.
+    - languageCode: fr-FR
+      text: "D\u00E9bloqu\u00E9 apr\u00E8s avoir termin\u00E9 le jeu une fois."
+    - languageCode: it-IT
+      text: Sbloccato dopo aver completato il gioco una volta.
+    - languageCode: ko-KR
+      text: "\uAC8C\uC784\uC744 \uCC98\uC74C \uD074\uB9AC\uC5B4\uD55C \uB4A4 \uD574\uAE08"
+    - languageCode: es-ES
+      text: Desbloqueado al completar el juego una vez.
+    - languageCode: ru-RU
+      text: "\u041E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u043F\u043E\u0441\u043B\u0435 \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F \u0438\u0433\u0440\u044B."
+    - languageCode: th-TH
+      text: "\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01\u0E2B\u0E25\u0E31\u0E07\u0E1C\u0E48\u0E32\u0E19\u0E40\u0E01\u0E21\u0E04\u0E23\u0E31\u0E49\u0E07\u0E41\u0E23\u0E01"
+    - languageCode: ja-JP
+      text: "\u521D\u3081\u3066\u30B2\u30FC\u30E0\u3092\u30AF\u30EA\u30A2\u3059\u308B\u3068\u89E3\u653E"
+    - languageCode: pt-PT
+      text: Desbloqueado ap\u00F3s conclu\u00EDres o jogo uma vez.
+    - languageCode: pl-PL
+      text: Odblokowane po pierwszym uko\u0144czeniu gry.
+    - languageCode: da-DK
+      text: "L\u00E5ses op efter f\u00F8rste gennemf\u00F8rsel af spillet."
+    - languageCode: nl-NL
+      text: Ontgrendeld na het eenmaal uitspelen van de game.
+    - languageCode: fi-FI
+      text: Avautuu ensimm\u00E4isen l\u00E4pipeluun j\u00E4lkeen.
+    - languageCode: nb-NO
+      text: "L\u00E5ses opp etter f\u00F8rste gjennomf\u00F8ring av spillet."
+    - languageCode: sv-SE
+      text: "L\u00E5ses upp efter att du spelat klart spelet en g\u00E5ng."
+    - languageCode: hu-HU
+      text: "Felold\u00F3dik, miut\u00E1n el\u0151sz\u00F6r v\u00E9gigj\u00E1tszottad a j\u00E1t\u00E9kot."
+    - languageCode: cs-CZ
+      text: "Odem\u010Deno po prvn\u00EDm dokon\u010Den\u00ED hry."
+    - languageCode: ro-RO
+      text: Deblocat dup\u0103 ce termini jocul o dat\u0103.
+    - languageCode: tr-TR
+      text: Oyunu ilk kez bitirdikten sonra a\u00E7\u0131l\u0131r.
+    - languageCode: pt-BR
+      text: Liberado depois de zerar o jogo uma vez.
+    - languageCode: bg-BG
+      text: "\u041E\u0442\u043A\u043B\u044E\u0447\u0432\u0430 \u0441\u0435 \u0441\u043B\u0435\u0434 \u043F\u044A\u0440\u0432\u043E \u0437\u0430\u0432\u044A\u0440\u0448\u0432\u0430\u043D\u0435 \u043D\u0430 \u0438\u0433\u0440\u0430\u0442\u0430."
+    - languageCode: el-GR
+      text: "\u039E\u03B5\u03BA\u03BB\u03B5\u03B9\u03B4\u03CE\u03BD\u03B5\u03C4\u03B1\u03B9 \u03B1\u03C6\u03BF\u03CD \u03BF\u03BB\u03BF\u03BA\u03BB\u03B7\u03C1\u03CE\u03C3\u03B5\u03B9\u03C2 \u03C4\u03BF \u03C0\u03B1\u03B9\u03C7\u03BD\u03AF\u03B4\u03B9 \u03BC\u03AF\u03B1 \u03C6\u03BF\u03C1\u03AC."
+    - languageCode: uk-UA
+      text: "\u0412\u0456\u0434\u043A\u0440\u0438\u0432\u0430\u0454\u0442\u044C\u0441\u044F \u043F\u0456\u0441\u043B\u044F \u043F\u0435\u0440\u0448\u043E\u0433\u043E \u043F\u0440\u043E\u0445\u043E\u0434\u0436\u0435\u043D\u043D\u044F \u0433\u0440\u0438."
+    - languageCode: es-419
+      text: Se desbloquea al terminar el juego una vez.
+    - languageCode: vi-VN
+      text: "M\u1EDF kh\u00F3a sau khi ho\u00E0n th\u00E0nh game l\u1EA7n \u0111\u1EA7u."
+    - languageCode: id-ID
+      text: Terbuka setelah menyelesaikan permainan sekali.
+  - key: smallgame.help_tips
+    cells:
+    - languageCode: en-US
+      text: "1. Click the first puzzle piece you want to move \u2014 it will highlight. Then click a second, different piece; the two will swap places immediately.\n2. You can keep swapping. When the picture is complete and coherent, you clear the level."
+    - languageCode: zh-CN
+      text: "1\u3001\u7528\u9F20\u6807\u70B9\u51FB\u7B2C\u4E00\u5757\u60A8\u60F3\u79FB\u52A8\u7684\u62FC\u56FE\uFF0C\u5B83\u4F1A\u9AD8\u4EAE\u663E\u793A\u3002\u63A5\u7740\u70B9\u51FB\u7B2C\u4E8C\u5757\u4E0D\u540C\u7684\u62FC\u56FE\uFF0C\u8FD9\u4E24\u5757\u62FC\u56FE\u7684\u4F4D\u7F6E\u4F1A\u7ACB\u5373\u4E92\u76F8\u4EA4\u6362\u3002\n2\u3001\u60A8\u53EF\u4EE5\u4E0D\u65AD\u91CD\u590D\u70B9\u51FB\u4EA4\u6362\u7684\u64CD\u4F5C\uFF0C\u5F53\u6784\u6210\u4E00\u5E45\u5B8C\u6574\u3001\u8FDE\u8D2F\u7684\u753B\u9762\u65F6\u6E38\u620F\u5373\u53EF\u901A\u5173\u3002"
+    - languageCode: zh-TW
+      text: "1\u3001\u7528\u6ED1\u9F20\u9EDE\u9078\u7B2C\u4E00\u584A\u60A8\u60F3\u79FB\u52D5\u7684\u62FC\u5716\uFF0C\u5B83\u6703\u9AD8\u4EAE\u986F\u793A\u3002\u63A5\u8457\u9EDE\u9078\u7B2C\u4E8C\u584A\u4E0D\u540C\u7684\u62FC\u5716\uFF0C\u9019\u5169\u584A\u62FC\u5716\u7684\u4F4D\u7F6E\u6703\u7ACB\u5373\u4E92\u76F8\u4EA4\u63DB\u3002\n2\u3001\u60A8\u53EF\u4EE5\u4E0D\u65B7\u91CD\u8907\u9EDE\u64CA\u4EA4\u63DB\u7684\u64CD\u4F5C\uFF0C\u7576\u69CB\u6210\u4E00\u5E45\u5B8C\u6574\u3001\u9023\u8C9B\u7684\u756B\u9762\u6642\u904A\u6232\u5373\u53EF\u901A\u95DC\u3002"
+    - languageCode: de-DE
+      text: "1. Klicke auf das erste Puzzleteil, das du bewegen willst \u2014 es wird hervorgehoben. Klicke dann auf ein zweites, anderes Teil; die beiden tauschen sofort die Pl\u00E4tze.\n2. Du kannst weiter tauschen. Wenn das Bild vollst\u00E4ndig und stimmig ist, schaffst du das Level."
+    - languageCode: fr-FR
+      text: "1. Cliquez sur la premi\u00E8re pi\u00E8ce \u00E0 d\u00E9placer \u2014 elle se surligne. Puis cliquez sur une seconde pi\u00E8ce diff\u00E9rente : les deux \u00E9changent imm\u00E9diatement leurs places.\n2. Vous pouvez continuer \u00E0 \u00E9changer. Lorsque l\u2019image est compl\u00E8te et coh\u00E9rente, vous validez le niveau."
+    - languageCode: it-IT
+      text: "1. Clicca il primo pezzo che vuoi spostare \u2014 si evidenzier\u00E0. Poi clicca un secondo pezzo diverso: i due si scambiano subito di posto.\n2. Puoi continuare a scambiare. Quando l\u2019immagine \u00E8 completa e coerente, superi il livello."
+    - languageCode: ko-KR
+      text: "1. \uC62E\uAE30\uACE0 \uC2F6\uC740 \uCCAB \uBC88\uC9F8 \uD37C\uC990 \uC870\uAC01\uC744 \uD074\uB9AD\uD558\uBA74 \uAC15\uC870\uB429\uB2C8\uB2E4. \uC774\uC5B4\uC11C \uB2E4\uB978 \uB450 \uBC88\uC9F8 \uC870\uAC01\uC744 \uD074\uB9AD\uD558\uBA74 \uB450 \uC870\uAC01\uC758 \uC704\uCE58\uAC00 \uC989\uC2DC \uBC14\uB01D\uB2C8\uB2E4.\n2. \uACC4\uC18D \uAD50\uD658\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uADF8\uB9BC\uC774 \uC644\uC804\uD558\uACE0 \uC790\uC5F0\uC2A4\uB7FD\uAC8C \uB9DE\uCD94\uC5B4\uC9C0\uBA74 \uC2A4\uD14C\uC774\uC9C0\uB97C \uD1B5\uACFC\uD569\uB2C8\uB2E4."
+    - languageCode: es-ES
+      text: "1. Haz clic en la primera pieza que quieras mover: se resaltar\u00E1. Luego haz clic en una segunda pieza distinta; las dos intercambian su posici\u00F3n al instante.\n2. Puedes seguir intercambiando. Cuando la imagen sea completa y coherente, superas el nivel."
+    - languageCode: es-419
+      text: "1. Haz clic en la primera pieza que quieras mover: se resaltar\u00E1. Luego haz clic en una segunda pieza distinta; las dos intercambian su lugar al instante.\n2. Pod\u00E9s seguir intercambiando. Cuando la imagen quede completa y coherente, pas\u00E1s el nivel."
+    - languageCode: ru-RU
+      text: "1. \u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043D\u0430 \u043F\u0435\u0440\u0432\u044B\u0439 \u0444\u0440\u0430\u0433\u043C\u0435\u043D\u0442, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0445\u043E\u0442\u0438\u0442\u0435 \u0441\u0434\u0432\u0438\u043D\u0443\u0442\u044C \u2014 \u043E\u043D \u043F\u043E\u0434\u0441\u0432\u0435\u0442\u0438\u0442\u0441\u044F. \u0417\u0430\u0442\u0435\u043C \u043D\u0430\u0436\u043C\u0438\u0442\u0435 \u043D\u0430 \u0432\u0442\u043E\u0440\u043E\u0439, \u0434\u0440\u0443\u0433\u043E\u0439 \u0444\u0440\u0430\u0433\u043C\u0435\u043D\u0442: \u043E\u043D\u0438 \u0441\u0440\u0430\u0437\u0443 \u043F\u043E\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F \u043C\u0435\u0441\u0442\u0430\u043C\u0438.\n2. \u041C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0442\u044C \u043C\u0435\u043D\u044F\u0442\u044C \u043C\u0435\u0441\u0442\u0430\u043C\u0438. \u041A\u043E\u0433\u0434\u0430 \u043A\u0430\u0440\u0442\u0438\u043D\u0430 \u0441\u043B\u043E\u0436\u0438\u0442\u0441\u044F \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u0438 \u0433\u0430\u0440\u043C\u043E\u043D\u0438\u0447\u043D\u043E, \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043F\u0440\u043E\u0439\u0434\u0435\u043D."
+    - languageCode: th-TH
+      text: "1. \u0E04\u0E25\u0E34\u0E01\u0E0A\u0E34\u0E49\u0E19\u0E1B\u0E23\u0E34\u0E28\u0E19\u0E32\u0E0A\u0E34\u0E49\u0E19\u0E41\u0E23\u0E01\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E02\u0E22\u0E31\u0E1A \u2014 \u0E0A\u0E34\u0E49\u0E19\u0E19\u0E31\u0E49\u0E19\u0E08\u0E30\u0E16\u0E39\u0E01\u0E44\u0E2E\u0E44\u0E25\u0E15\u0E4C \u0E08\u0E32\u0E01\u0E19\u0E31\u0E49\u0E19\u0E04\u0E25\u0E34\u0E01\u0E0A\u0E34\u0E49\u0E19\u0E17\u0E35\u0E48\u0E2A\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E15\u0E48\u0E32\u0E07\u0E2D\u0E2D\u0E01\u0E44\u0E1B \u0E17\u0E31\u0E49\u0E07\u0E2A\u0E2D\u0E07\u0E0A\u0E34\u0E49\u0E19\u0E08\u0E30\u0E2A\u0E25\u0E31\u0E1A\u0E15\u0E33\u0E41\u0E2B\u0E19\u0E48\u0E07\u0E17\u0E31\u0E19\u0E17\u0E35\n2. \u0E04\u0E38\u0E13\u0E2A\u0E25\u0E31\u0E1A\u0E44\u0E14\u0E49\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E22 \u0E46 \u0E40\u0E21\u0E37\u0E48\u0E2D\u0E20\u0E32\u0E1E\u0E2A\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C\u0E41\u0E25\u0E30\u0E15\u0E48\u0E2D\u0E40\u0E19\u0E37\u0E48\u0E2D\u0E07 \u0E04\u0E38\u0E13\u0E08\u0E30\u0E1C\u0E48\u0E32\u0E19\u0E14\u0E48\u0E32\u0E19"
+    - languageCode: ja-JP
+      text: "1. \u52D5\u304B\u3057\u305F\u3044\u6700\u521D\u306E\u30D4\u30FC\u30B9\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u30CF\u30A4\u30E9\u30A4\u30C8\u3055\u308C\u307E\u3059\u3002\u7D9A\u3044\u3066\u5225\u306E2\u679A\u76EE\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u30012\u679A\u306F\u3059\u3050\u306B\u5165\u308C\u66FF\u308F\u308A\u307E\u3059\u3002\n2. \u7E70\u308A\u8FD4\u3057\u4EA4\u63DB\u3067\u304D\u307E\u3059\u3002\u7D75\u304C\u4E00\u679A\u306E\u5B8C\u6210\u3057\u305F\u7D75\u3068\u3057\u3066\u3064\u306A\u304C\u3063\u305F\u3089\u30AF\u30EA\u30A2\u3067\u3059\u3002"
+    - languageCode: pt-PT
+      text: "1. Clica na primeira pe\u00E7a que queres mover \u2014 fica destacada. Depois clica numa segunda pe\u00E7a diferente; as duas trocam de lugar de imediato.\n2. Podes continuar a trocar. Quando a imagem estiver completa e coerente, passas o n\u00EDvel."
+    - languageCode: pl-PL
+      text: "1. Kliknij pierwszy element, kt\u00F3ry chcesz przesun\u0105\u0107 \u2014 zostanie pod\u015Bwietlony. Potem kliknij drugi, inny element; od razu zamieni\u0105 si\u0119 miejscami.\n2. Mo\u017Cesz dalej zamienia\u0107. Gdy obraz b\u0119dzie kompletny i sp\u00F3jny, przechodzisz poziom."
+    - languageCode: da-DK
+      text: "1. Klik p\u00E5 den f\u00F8rste brik, du vil flytte \u2014 den fremh\u00E6ves. Klik derefter p\u00E5 en anden brik; de to bytter straks plads.\n2. Du kan blive ved med at bytte. N\u00E5r billedet er fuldt og sammenh\u00E6ngende, best\u00E5r du niveauet."
+    - languageCode: nl-NL
+      text: "1. Klik op het eerste stuk dat je wilt verplaatsen \u2014 het wordt gemarkeerd. Klik daarna op een tweede, ander stuk; ze wisselen direct van plek.\n2. Je kunt blijven wisselen. Als het beeld compleet en samenhangend is, haal je het level."
+    - languageCode: fi-FI
+      text: "1. Napsauta ensimm\u00E4ist\u00E4 siirrett\u00E4v\u00E4\u00E4 palaa \u2014 se korostuu. Napsauta sitten toista, eri palaa; ne vaihtavat paikkaa heti.\n2. Voit jatkaa vaihtamista. Kun kuva on t\u00E4ydellinen ja yhten\u00E4inen, l\u00E4p\u00E4iset tason."
+    - languageCode: nb-NO
+      text: "1. Klikk p\u00E5 den f\u00F8rste brikken du vil flytte \u2014 den markeres. Klikk deretter p\u00E5 en annen brikke; de to bytter plass med \u00E9n gang.\n2. Du kan fortsette \u00E5 bytte. N\u00E5r bildet er fullstendig og sammenhengende, best\u00E5r du niv\u00E5et."
+    - languageCode: sv-SE
+      text: "1. Klicka p\u00E5 den f\u00F6rsta bit du vill flytta \u2014 den markeras. Klicka sedan p\u00E5 en andra, annan bit; de tv\u00E5 byter plats direkt.\n2. Du kan forts\u00E4tta byta. N\u00E4r bilden \u00E4r fullst\u00E4ndig och sammanh\u00E4ngande klarar du niv\u00E5n."
+    - languageCode: hu-HU
+      text: "1. Kattints az els\u0151 mozgatni k\u00EDv\u00E1nt darabra \u2014 kiemel\u0151dik. Azt\u00E1n kattints egy m\u00E1sodik, m\u00E1s darabra; a kett\u0151 azonnal megcser\u00E9l\u0151dik.\n2. Tov\u00E1bb cser\u00E9lgethetsz. Ha a k\u00E9p teljes \u00E9s \u00F6sszef\u00FCgg\u0151, teljes\u00EDted a szintet."
+    - languageCode: cs-CZ
+      text: "1. Klikni na prvn\u00ED d\u00EDlek, kter\u00FD chce\u0161 posunout \u2014 zv\u00FDrazn\u00ED se. Pak klikni na druh\u00FD, jin\u00FD d\u00EDlek; oba se okam\u017Eit\u011B prohod\u00ED.\n2. M\u016F\u017Ee\u0161 pokra\u010Dovat v prohazov\u00E1n\u00ED. A\u017E je obr\u00E1zek kompletn\u00ED a souvisl\u00FD, spln\u00ED\u0161 level."
+    - languageCode: ro-RO
+      text: "1. Apas\u0103 prima pies\u0103 pe care vrei s\u0103 o mu\u021Bi \u2014 se eviden\u021Biaz\u0103. Apoi apas\u0103 o a doua pies\u0103 diferit\u0103; cele dou\u0103 \u00EE\u0219i schimb\u0103 locul imediat.\n2. Po\u021Bi continua s\u0103 schimbi. C\u00E2nd imaginea e complet\u0103 \u0219i coerent\u0103, treci nivelul."
+    - languageCode: tr-TR
+      text: "1. Ta\u015F\u0131mak istedi\u011Fin ilk par\u00E7aya t\u0131kla \u2014 vurgulan\u0131r. Sonra farkl\u0131 bir ikinci par\u00E7aya t\u0131kla; ikisi hemen yer de\u011Fi\u015Ftirir.\n2. B\u00F6yle devam edebilirsin. G\u00F6r\u00FCnt\u00FC eksiksiz ve tutarl\u0131 oldu\u011Funda b\u00F6l\u00FCm\u00FC ge\u00E7ersin."
+    - languageCode: pt-BR
+      text: "1. Clique na primeira pe\u00E7a que quer mover \u2014 ela destaca. Depois clique numa segunda pe\u00E7a diferente; as duas trocam de lugar na hora.\n2. Voc\u00EA pode continuar trocando. Quando a imagem estiver completa e coerente, voc\u00EA passa de fase."
+    - languageCode: bg-BG
+      text: "1. \u0429\u0440\u0430\u043A\u043D\u0438 \u0432\u044A\u0440\u0445\u0443 \u043F\u044A\u0440\u0432\u0430\u0442\u0430 \u0447\u0430\u0441\u0442, \u043A\u043E\u044F\u0442\u043E \u0438\u0441\u043A\u0430\u0448 \u0434\u0430 \u043F\u0440\u0435\u043C\u0435\u0441\u0442\u0438\u0448 \u2014 \u0449\u0435 \u0441\u0435 \u043F\u043E\u0434\u0441\u0432\u0435\u0442\u0438. \u041F\u043E\u0441\u043B\u0435 \u0449\u0440\u0430\u043A\u043D\u0438 \u0432\u044A\u0440\u0445\u0443 \u0432\u0442\u043E\u0440\u0430, \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u0430 \u0447\u0430\u0441\u0442; \u0434\u0432\u0435\u0442\u0435 \u0432\u0435\u0434\u043D\u0430\u0433\u0430 \u0441\u0438 \u0440\u0430\u0437\u043C\u0435\u043D\u044F\u0442 \u043C\u0435\u0441\u0442\u0430\u0442\u0430.\n2. \u041C\u043E\u0436\u0435\u0448 \u0434\u0430 \u043F\u0440\u043E\u0434\u044A\u043B\u0436\u0438\u0448 \u0434\u0430 \u0440\u0430\u0437\u043C\u0435\u043D\u044F\u0448. \u041A\u043E\u0433\u0430\u0442\u043E \u043A\u0430\u0440\u0442\u0438\u043D\u0430\u0442\u0430 \u0435 \u043F\u044A\u043B\u043D\u0430 \u0438 \u043F\u043E\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u043D\u0430, \u043C\u0438\u043D\u0430\u0432\u0430\u0448 \u043D\u0438\u0432\u043E\u0442\u043E."
+    - languageCode: el-GR
+      text: "1. \u039A\u03AC\u03BD\u03B5 \u03BA\u03BB\u03B9\u03BA \u03C3\u03C4\u03BF \u03C0\u03C1\u03CE\u03C4\u03BF \u03BA\u03BF\u03BC\u03BC\u03AC\u03C4\u03B9 \u03C0\u03BF\u03C5 \u03B8\u03AD\u03BB\u03B5\u03B9\u03C2 \u03BD\u03B1 \u03BC\u03B5\u03C4\u03B1\u03BA\u03B9\u03BD\u03AE\u03C3\u03B5\u03B9\u03C2 \u2014 \u03B8\u03B1 \u03B5\u03C0\u03B9\u03C3\u03B7\u03BC\u03B1\u03BD\u03B8\u03B5\u03AF. \u039C\u03B5\u03C4\u03AC \u03BA\u03AC\u03BD\u03B5 \u03BA\u03BB\u03B9\u03BA \u03C3\u03B5 \u03AD\u03BD\u03B1 \u03B4\u03B5\u03CD\u03C4\u03B5\u03C1\u03BF, \u03B4\u03B9\u03B1\u03C6\u03BF\u03C1\u03B5\u03C4\u03B9\u03BA\u03CC \u03BA\u03BF\u03BC\u03BC\u03AC\u03C4\u03B9\u00B7 \u03C4\u03B1 \u03B4\u03CD\u03BF \u03B1\u03BB\u03BB\u03AC\u03B6\u03BF\u03C5\u03BD \u03B8\u03AD\u03C3\u03B7 \u03B1\u03BC\u03AD\u03C3\u03C9\u03C2.\n2. \u039C\u03C0\u03BF\u03C1\u03B5\u03AF\u03C2 \u03BD\u03B1 \u03C3\u03C5\u03BD\u03B5\u03C7\u03AF\u03C3\u03B5\u03B9\u03C2 \u03C4\u03B9\u03C2 \u03B1\u03BD\u03C4\u03B1\u03BB\u03BB\u03B1\u03B3\u03AD\u03C2. \u038C\u03C4\u03B1\u03BD \u03B7 \u03B5\u03B9\u03BA\u03CC\u03BD\u03B1 \u03B5\u03AF\u03BD\u03B1\u03B9 \u03C0\u03BB\u03AE\u03C1\u03B7\u03C2 \u03BA\u03B1\u03B9 \u03C3\u03C5\u03BD\u03B5\u03BA\u03C4\u03B9\u03BA\u03AE, \u03C0\u03B5\u03C1\u03BD\u03AC\u03C2 \u03C4\u03BF \u03B5\u03C0\u03AF\u03C0\u03B5\u03B4\u03BF."
+    - languageCode: uk-UA
+      text: "1. \u041D\u0430\u0442\u0438\u0441\u043D\u0438 \u043F\u0435\u0440\u0448\u0438\u0439 \u0444\u0440\u0430\u0433\u043C\u0435\u043D\u0442, \u044F\u043A\u0438\u0439 \u0445\u043E\u0447\u0435\u0448 \u0437\u0440\u0443\u0448\u0438\u0442\u0438 \u2014 \u0432\u0456\u043D \u043F\u0456\u0434\u0441\u0432\u0456\u0442\u0438\u0442\u044C\u0441\u044F. \u041F\u043E\u0442\u0456\u043C \u043D\u0430\u0442\u0438\u0441\u043D\u0438 \u0434\u0440\u0443\u0433\u0438\u0439, \u0456\u043D\u0448\u0438\u0439 \u0444\u0440\u0430\u0433\u043C\u0435\u043D\u0442; \u0432\u043E\u043D\u0438 \u043E\u0434\u0440\u0430\u0437 \u043F\u043E\u043C\u0456\u043D\u044F\u044E\u0442\u044C\u0441\u044F \u043C\u0456\u0441\u0446\u044F\u043C\u0438.\n2. \u041C\u043E\u0436\u043D\u0430 \u043F\u0440\u043E\u0434\u043E\u0432\u0436\u0443\u0432\u0430\u0442\u0438 \u043C\u0456\u043D\u044F\u0442\u0438. \u041A\u043E\u043B\u0438 \u043A\u0430\u0440\u0442\u0438\u043D\u0430 \u043F\u043E\u0432\u043D\u0430 \u0457 \u0443\u0437\u0433\u043E\u0434\u0436\u0435\u043D\u0430, \u0442\u0438 \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0448 \u0440\u0456\u0432\u0435\u043D\u044C."
+    - languageCode: vi-VN
+      text: "1. Nh\u1EA5p v\u00E0o m\u1EA3nh \u0111\u1EA7u ti\u00EAn b\u1EA1n mu\u1ED1n di chuy\u1EC3n \u2014 m\u1EA3nh \u0111\u00F3 s\u1EBD \u0111\u01B0\u1EE3c t\u00F4 s\u00E1ng. Sau \u0111\u00F3 nh\u1EA5p v\u00E0o m\u1EA3nh th\u1EE9 hai kh\u00E1c; hai m\u1EA3nh s\u1EBD \u0111\u1ED5i ch\u1ED7 ngay l\u1EADp t\u1EE9c.\n2. B\u1EA1n c\u00F3 th\u1EC3 ti\u1EBFp t\u1EE5c \u0111\u1ED5i. Khi h\u00ECnh ho\u00E0n ch\u1EC9nh v\u00E0 li\u1EC1n m\u1EA1ch, b\u1EA1n qua m\u00E0n."
+    - languageCode: id-ID
+      text: "1. Klik keping pertama yang ingin kamu pindahkan \u2014 akan disorot. Lalu klik keping kedua yang berbeda; keduanya langsung bertukar tempat.\n2. Kamu bisa terus menukar. Saat gambar utuh dan menyatu, kamu menyelesaikan level."
+  - key: smallgame.complete_prompt
+    cells:
+    - languageCode: en-US
+      text: Congratulations! You have completed the puzzle.
+    - languageCode: zh-CN
+      text: "\u606D\u559C\uFF0C\u5DF2\u7ECF\u5B8C\u6210\u62FC\u56FE\u5566\uFF01"
+    - languageCode: zh-TW
+      text: "\u606D\u559C\uFF0C\u5DF2\u7D93\u5B8C\u6210\u62FC\u5716\u56C9\uFF01"
+    - languageCode: de-DE
+      text: Herzlichen Gl\u00FCckwunsch! Du hast das Puzzle abgeschlossen.
+    - languageCode: fr-FR
+      text: Toutes nos f\u00E9licitations ! Vous avez termin\u00E9 le puzzle.
+    - languageCode: it-IT
+      text: Congratulazioni! Hai completato il puzzle.
+    - languageCode: ko-KR
+      text: "\uCD95\uD558\uD569\uB2C8\uB2E4, \uD37C\uC990\uC744 \uBAA8\uB450 \uB9DE\uCD94\uC5C8\uC5B4\uC694!"
+    - languageCode: es-ES
+      text: "\u00A1Enhorabuena, has completado el puzzle!"
+    - languageCode: ru-RU
+      text: "\u041F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u044F\u0435\u043C! \u0412\u044B \u0441\u043E\u0431\u0440\u0430\u043B\u0438 \u043F\u0430\u0437\u043B."
+    - languageCode: th-TH
+      text: "\u0E22\u0E34\u0E19\u0E14\u0E35\u0E14\u0E49\u0E27\u0E22 \u0E04\u0E38\u0E13\u0E15\u0E48\u0E2D\u0E1B\u0E23\u0E34\u0E28\u0E19\u0E32\u0E08\u0E19\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08\u0E41\u0E25\u0E49\u0E27!"
+    - languageCode: ja-JP
+      text: "\u304A\u3081\u3067\u3068\u3046\u3054\u3056\u3044\u307E\u3059\u3002\u30D1\u30BA\u30EB\u304C\u5B8C\u6210\u3057\u307E\u3057\u305F\uFF01"
+    - languageCode: pt-PT
+      text: "Parab\u00E9ns! Completaste o puzzle."
+    - languageCode: pl-PL
+      text: "Gratulacje! Uko\u0144czy\u0142e\u015B uk\u0142adank\u0119."
+    - languageCode: da-DK
+      text: "Tillykke! Du har f\u00E6rdiggjort puslespillet."
+    - languageCode: nl-NL
+      text: Gefeliciteerd! Je hebt de puzzel voltooid.
+    - languageCode: fi-FI
+      text: "Onnittelut! Olet saanut palapelin valmiiksi."
+    - languageCode: nb-NO
+      text: "Gratulerer! Du har fullf\u00F8rt puslespillet."
+    - languageCode: sv-SE
+      text: "Grattis! Du har klarat pusslet."
+    - languageCode: hu-HU
+      text: "Gratul\u00E1lunk! Elk\u00E9sz\u00EDtetted a puzzle-t."
+    - languageCode: cs-CZ
+      text: "Gratulujeme! Dokon\u010Dil jsi puzzle."
+    - languageCode: ro-RO
+      text: "Felicit\u0103ri! Ai terminat puzzle-ul."
+    - languageCode: tr-TR
+      text: Tebrikler! Yapbozu tamamlad\u0131n.
+    - languageCode: pt-BR
+      text: "Parab\u00E9ns! Voc\u00EA completou o quebra-cabe\u00E7a."
+    - languageCode: bg-BG
+      text: "\u041F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F! \u0417\u0430\u0432\u044A\u0440\u0448\u0438\u0445\u0442\u0435 \u043F\u044A\u0437\u0435\u043B\u0430."
+    - languageCode: el-GR
+      text: "\u03A3\u03C5\u03B3\u03C7\u03B1\u03C1\u03B7\u03C4\u03AE\u03C1\u03B9\u03B1! \u039F\u03BB\u03BF\u03BA\u03BB\u03CE\u03C3\u03B1\u03C4\u03B5 \u03C4\u03BF \u03C0\u03B1\u03B6\u03BB."
+    - languageCode: uk-UA
+      text: "\u0412\u0456\u0442\u0430\u0454\u043C\u043E! \u0412\u0438 \u0441\u043A\u043B\u0430\u043B\u0438 \u043F\u0430\u0437\u043B."
+    - languageCode: es-419
+      text: "\u00A1Felicitaciones! Completaste el rompecabezas."
+    - languageCode: vi-VN
+      text: "Ch\u00FAc m\u1EEBng, b\u1EA1n \u0111\u00E3 ho\u00E0n th\u00E0nh tranh gh\u00E9p!"
+    - languageCode: id-ID
+      text: Selamat! Kamu sudah menyelesaikan puzzle-nya.
+  - key: smallgame.win_button
+    cells:
+    - languageCode: en-US
+      text: OK
+    - languageCode: de-DE
+      text: OK
+    - languageCode: fr-FR
+      text: OK
+    - languageCode: it-IT
+      text: OK
+    - languageCode: ko-KR
+      text: "\uD655\uC778"
+    - languageCode: es-ES
+      text: Aceptar
+    - languageCode: zh-CN
+      text: "\u786E\u5B9A"
+    - languageCode: zh-TW
+      text: "\u78BA\u5B9A"
+    - languageCode: ru-RU
+      text: "\u041E\u041A"
+    - languageCode: th-TH
+      text: "\u0E15\u0E01\u0E25\u0E07"
+    - languageCode: ja-JP
+      text: OK
+    - languageCode: pt-PT
+      text: OK
+    - languageCode: pl-PL
+      text: OK
+    - languageCode: da-DK
+      text: OK
+    - languageCode: nl-NL
+      text: OK
+    - languageCode: fi-FI
+      text: OK
+    - languageCode: nb-NO
+      text: OK
+    - languageCode: sv-SE
+      text: OK
+    - languageCode: hu-HU
+      text: OK
+    - languageCode: cs-CZ
+      text: OK
+    - languageCode: ro-RO
+      text: OK
+    - languageCode: tr-TR
+      text: Tamam
+    - languageCode: pt-BR
+      text: OK
+    - languageCode: bg-BG
+      text: "\u041E\u041A"
+    - languageCode: el-GR
+      text: OK
+    - languageCode: uk-UA
+      text: OK
+    - languageCode: es-419
+      text: Aceptar
+    - languageCode: vi-VN
+      text: "\u0110\u1ED3ng \u00FD"
+    - languageCode: id-ID
+      text: Oke
+  - key: settings.reset_confirm
+    cells:
+    - languageCode: en-US
+      text: Are you sure you want to reset game data?
+    - languageCode: zh-CN
+      text: "\u786E\u5B9A\u8981\u91CD\u7F6E\u6E38\u620F\u6570\u636E\u5417\uFF1F"
+    - languageCode: zh-TW
+      text: "\u78BA\u5B9A\u8981\u91CD\u7F6E\u904A\u6232\u8CC7\u6599\u55CE\uFF1F"
+    - languageCode: de-DE
+      text: Bist du sicher, dass du die Spieldaten zur\u00FCcksetzen m\u00F6chtest?
+    - languageCode: fr-FR
+      text: Voulez-vous vraiment r\u00E9initialiser les donn\u00E9es du jeu ?
+    - languageCode: it-IT
+      text: Vuoi davvero reimpostare i dati di gioco?
+    - languageCode: ko-KR
+      text: "\uC815\uB9D0 \uAC8C\uC784 \uB370\uC774\uD130\uB97C \uCD08\uAE30\uD654\uD560\uAE4C\uC694?"
+    - languageCode: es-ES
+      text: "\u00BFSeguro que quieres restablecer los datos del juego?"
+    - languageCode: ru-RU
+      text: "\u0412\u044B \u0443\u0432\u0435\u0440\u0435\u043D\u044B, \u0447\u0442\u043E \u0445\u043E\u0442\u0438\u0442\u0435 \u0441\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u0434\u0430\u043D\u043D\u044B\u0435 \u0438\u0433\u0440\u044B?"
+    - languageCode: th-TH
+      text: "\u0E04\u0E38\u0E13\u0E41\u0E19\u0E48\u0E43\u0E08\u0E2B\u0E23\u0E37\u0E2D\u0E44\u0E21\u0E48\u0E27\u0E48\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E23\u0E35\u0E40\u0E0B\u0E47\u0E15\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E01\u0E21?"
+    - languageCode: ja-JP
+      text: "\u30B2\u30FC\u30E0\u30C7\u30FC\u30BF\u3092\u30EA\u30BB\u30C3\u30C8\u3057\u3066\u3082\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    - languageCode: pt-PT
+      text: "Tens a certeza de que queres repor os dados do jogo?"
+    - languageCode: pl-PL
+      text: "Czy na pewno chcesz zresetowa\u0107 dane gry?"
+    - languageCode: da-DK
+      text: "Er du sikker p\u00E5, at du vil nulstille spildata?"
+    - languageCode: nl-NL
+      text: Weet je zeker dat je de spelgegevens wilt resetten?
+    - languageCode: fi-FI
+      text: Haluatko varmasti nollata pelitiedot?
+    - languageCode: nb-NO
+      text: "Er du sikker p\u00E5 at du vil tilbakestille spilldata?"
+    - languageCode: sv-SE
+      text: "\u00C4r du s\u00E4ker p\u00E5 att du vill \u00E5terst\u00E4lla speldata?"
+    - languageCode: hu-HU
+      text: "Biztosan vissza szeretn\u00E9d \u00E1ll\u00EDtani a j\u00E1t\u00E9kadatokat?"
+    - languageCode: cs-CZ
+      text: "Opravdu chce\u0161 obnovit hern\u00ED data?"
+    - languageCode: ro-RO
+      text: "Sigur vrei s\u0103 resetezi datele jocului?"
+    - languageCode: tr-TR
+      text: "Oyun verilerini s\u0131f\u0131rlamak istedi\u011Fine emin misin?"
+    - languageCode: pt-BR
+      text: "Tem certeza de que quer redefinir os dados do jogo?"
+    - languageCode: bg-BG
+      text: "\u0421\u0438\u0433\u0443\u0440\u043D\u0438 \u043B\u0438 \u0441\u0442\u0435, \u0447\u0435 \u0438\u0441\u043A\u0430\u0442\u0435 \u0434\u0430 \u043D\u0443\u043B\u0438\u0440\u0430\u0442\u0435 \u0434\u0430\u043D\u043D\u0438\u0442\u0435 \u043D\u0430 \u0438\u0433\u0440\u0430\u0442\u0430?"
+    - languageCode: el-GR
+      text: "\u0395\u03AF\u03C3\u03C4\u03B5 \u03C3\u03AF\u03B3\u03BF\u03C5\u03C1\u03BF\u03B9 \u03CC\u03C4\u03B9 \u03B8\u03AD\u03BB\u03B5\u03C4\u03B5 \u03BD\u03B1 \u03B5\u03C0\u03B1\u03BD\u03B1\u03C6\u03AD\u03C1\u03B5\u03C4\u03B5 \u03C4\u03B1 \u03B4\u03B5\u03B4\u03BF\u03BC\u03AD\u03BD\u03B1 \u03C0\u03B1\u03B9\u03C7\u03BD\u03B9\u03B4\u03B9\u03BF\u03CD;"
+    - languageCode: uk-UA
+      text: "\u0412\u0438 \u0432\u043F\u0435\u0432\u043D\u0435\u043D\u0456, \u0449\u043E \u0445\u043E\u0447\u0435\u0442\u0435 \u0441\u043A\u0438\u043D\u0443\u0442\u0438 \u0456\u0433\u0440\u043E\u0432\u0456 \u0434\u0430\u043D\u0456?"
+    - languageCode: es-419
+      text: "\u00BFSeguro que quer\u00E9s restablecer los datos del juego?"
+    - languageCode: vi-VN
+      text: "B\u1EA1n c\u00F3 ch\u1EAFc mu\u1ED1n \u0111\u1EB7t l\u1EA1i d\u1EEF li\u1EC7u game kh\u00F4ng?"
+    - languageCode: id-ID
+      text: Yakin ingin mengatur ulang data game?
+  - key: ui.main.exit_confirm
+    cells:
+    - languageCode: en-US
+      text: Quit the game?
+    - languageCode: zh-CN
+      text: "\u9000\u51FA\u6E38\u620F\uFF1F"
+    - languageCode: zh-TW
+      text: "\u7D50\u675F\u904A\u6232\uFF1F"
+    - languageCode: de-DE
+      text: Spiel beenden?
+    - languageCode: fr-FR
+      text: Quitter le jeu ?
+    - languageCode: it-IT
+      text: Uscire dal gioco?
+    - languageCode: ko-KR
+      text: "\uAC8C\uC784\uC744 \uC885\uB8CC\uD560\uAE4C\uC694?"
+    - languageCode: es-ES
+      text: "\u00BFSalir del juego?"
+    - languageCode: ru-RU
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0438\u0437 \u0438\u0433\u0440\u044B?"
+    - languageCode: th-TH
+      text: "\u0E2D\u0E2D\u0E01\u0E08\u0E32\u0E01\u0E40\u0E01\u0E21?"
+    - languageCode: ja-JP
+      text: "\u30B2\u30FC\u30E0\u3092\u7D42\u4E86\u3057\u307E\u3059\u304B\uFF1F"
+    - languageCode: pt-PT
+      text: Sair do jogo?
+    - languageCode: pl-PL
+      text: "Zamkn\u0105\u0107 gr\u0119?"
+    - languageCode: da-DK
+      text: "Afslut spillet?"
+    - languageCode: nl-NL
+      text: Spel afsluiten?
+    - languageCode: fi-FI
+      text: Lopetetaanko peli?
+    - languageCode: nb-NO
+      text: Avslutte spillet?
+    - languageCode: sv-SE
+      text: Avsluta spelet?
+    - languageCode: hu-HU
+      text: "Kil\u00E9p\u00E9s a j\u00E1t\u00E9kb\u00F3l?"
+    - languageCode: cs-CZ
+      text: "Ukon\u010Dit hru?"
+    - languageCode: ro-RO
+      text: "Ie\u0219i din joc?"
+    - languageCode: tr-TR
+      text: "Oyundan \u00E7\u0131k\u0131ls\u0131n m\u0131?"
+    - languageCode: pt-BR
+      text: Sair do jogo?
+    - languageCode: bg-BG
+      text: "\u0418\u0437\u0445\u043E\u0434 \u043E\u0442 \u0438\u0433\u0440\u0430\u0442\u0430?"
+    - languageCode: el-GR
+      text: "\u0388\u03BE\u03BF\u03B4\u03BF\u03C2 \u03B1\u03C0\u03CC \u03C4\u03BF \u03C0\u03B1\u03B9\u03C7\u03BD\u03AF\u03B4\u03B9;"
+    - languageCode: uk-UA
+      text: "\u0412\u0438\u0439\u0442\u0438 \u0437 \u0433\u0440\u0438?"
+    - languageCode: es-419
+      text: "\u00BFSalir del juego?"
+    - languageCode: vi-VN
+      text: "Tho\u00E1t game?"
+    - languageCode: id-ID
+      text: Keluar dari game?

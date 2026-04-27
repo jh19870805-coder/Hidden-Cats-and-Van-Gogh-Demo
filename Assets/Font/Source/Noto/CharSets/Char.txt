@@ -1,0 +1,407 @@
+FeatureSpec §9.8 language display names (native; for TMP charset / dropdown)
+English
+Deutsch
+Français
+Italiano
+한국어
+Español - España
+简体中文
+繁体中文
+Русский
+ไทย
+日本語
+Português - Portugal
+Polski
+Dansk
+Nederlands
+Suomi
+Norsk
+Svenska
+Magyar
+Čeština
+Română
+Türkçe
+Português - Brasil
+Български
+Ελληνικά
+Українська
+Español - Latinoamérica
+Tiếng Việt
+Bahasa Indonesia
+
+=== SOURCE_zh-CN ===
+第一次通关拼图游戏后解锁
+还需要 3/12 块拼图解锁
+1、用鼠标点击第一块您想移动的拼图，它会高亮显示。接着点击第二块不同的拼图，这两块拼图的位置会立即互相交换。
+2、您可以不断重复点击交换的操作,当构成一幅完整、连贯的画面时游戏即可通关
+我亲爱的朋友：
+真遗憾没能等到你，我先赶往小镇处理一件要事。房门未锁，请你就像回家一样，随意进来坐坐。
+屋里有很多小捣蛋鬼，你若觉得寂寥，不妨和它们一起打发时光。
+对了，窗边椅子上那幅未完成的拼图，似乎被它们弄丢了几片。如果你愿意，请帮我留意找寻。
+恭喜，已经完成拼图啦！
+确定要重置游戏数据吗？
+退出游戏？
+
+=== en-US ===
+Unlocked after clearing the puzzle game once.
+Need 3/12 puzzle pieces to unlock.
+1. Click the first puzzle piece you want to move — it will highlight. Then click a second, different piece; the two will swap places immediately.
+2. You can keep swapping. When the picture is complete and coherent, you clear the level.
+My dear friend,
+I’m sorry I couldn’t wait for you — I had to go into town on urgent business. The door is unlocked; please come in and make yourself at home.
+There are plenty of little rascals in the house; if you feel lonely, spend some time with them.
+By the way, the unfinished puzzle on the chair by the window — they seem to have lost a few pieces. If you wouldn’t mind, please keep an eye out for them.
+Congratulations! You have completed the puzzle.
+Are you sure you want to reset game data?
+Quit the game?
+
+=== de-DE ===
+Freigeschaltet nach dem ersten Abschluss des Spiels
+Es fehlen noch 3/12 Puzzleteile zum Freischalten
+1. Klicke auf das erste Puzzleteil, das du bewegen willst — es wird hervorgehoben. Klicke dann auf ein zweites, anderes Teil; die beiden tauschen sofort die Plätze.
+2. Du kannst weiter tauschen. Wenn das Bild vollständig und stimmig ist, schaffst du das Level.
+Mein lieber Freund,
+schade, dass ich nicht auf dich warten konnte — ich musste dringend in die Stadt. Die Tür ist nicht verschlossen; komm herein und fühl dich wie zu Hause.
+Im Haus gibt es jede Menge kleiner Schelme; wenn du dich einsam fühlst, vertreib dir die Zeit mit ihnen.
+Übrigens: Das unvollständige Puzzle auf dem Stuhl am Fenster — ein paar Teile scheinen sie verloren zu haben. Wenn du magst, halte bitte Ausschau danach.
+Herzlichen Glückwunsch! Du hast das Puzzle abgeschlossen.
+Bist du sicher, dass du die Spieldaten zurücksetzen möchtest?
+Spiel beenden?
+
+=== fr-FR ===
+Débloqué après avoir terminé le jeu une fois
+Il manque encore 3/12 pièces de puzzle pour débloquer
+1. Cliquez sur la première pièce à déplacer — elle se surligne. Puis cliquez sur une seconde pièce différente : les deux échangent immédiatement leurs places.
+2. Vous pouvez continuer à échanger. Lorsque l’image est complète et cohérente, vous validez le niveau.
+Mon ami(e) chéri(e),
+je suis désolé(e) de ne pas t’avoir attendu(e) — je dois partir en ville pour une affaire urgente. La porte n’est pas verrouillée ; entre et fais comme chez toi.
+Il y a plein de petites friponnes dans la maison ; si tu t’ennuies, passe du temps avec elles.
+À propos : le puzzle inachevé sur la chaise près de la fenêtre — il semble qu’elles aient égaré quelques pièces. Si tu veux bien, garde l’œil ouvert.
+Toutes nos félicitations ! Vous avez terminé le puzzle.
+Voulez-vous vraiment réinitialiser les données du jeu ?
+Quitter le jeu ?
+
+=== it-IT ===
+Sbloccato dopo aver completato il gioco una volta
+Servono ancora 3/12 pezzi del puzzle per sbloccare
+1. Clicca il primo pezzo che vuoi spostare — si evidenzierà. Poi clicca un secondo pezzo diverso: i due si scambiano subito di posto.
+2. Puoi continuare a scambiare. Quando l’immagine è completa e coerente, superi il livello.
+Mio caro amico,
+mi dispiace non aver potuto aspettarti — devo correre in città per un affare urgente. La porta non è chiusa a chiave; entra pure e mettiti comodo.
+In casa ci sono tanti piccoli birbanti; se ti senti solo, passa il tempo con loro.
+A proposito: il puzzle incompleto sulla sedia vicino alla finestra — sembra che abbiano smarrito qualche pezzo. Se vuoi, tieni d’occhio.
+Congratulazioni! Hai completato il puzzle.
+Vuoi davvero reimpostare i dati di gioco?
+Uscire dal gioco?
+
+=== ko-KR ===
+게임을 처음 클리어한 뒤 해금
+해금까지 퍼즐 조각 3/12개가 더 필요합니다
+1. 옮기고 싶은 첫 번째 퍼즐 조각을 클릭하면 강조됩니다. 이어서 다른 두 번째 조각을 클릭하면 두 조각의 위치가 즉시 바뀝니다.
+2. 계속 교환할 수 있습니다. 그림이 완전하고 자연스럽게 맞춰지면 스테이지를 통과합니다.
+친애하는 친구에게,
+미리 기다리지 못해 유감이야 — 급한 일로 마을에 다녀와야 해. 문은 잠그지 않았으니 집처럼 편히 들어와 앉아 있어.
+집에는 장난꾸러기 녀석들이 많아. 외롭다면 그들과 시간을 보내도 될 거야.
+참, 창가 의자 위 미완성 퍼즐 말이야 — 녀석들이 조각 몇 개를 잃어버린 것 같아. 괜찮다면 찾아줄 수 있을지 부탁할게.
+축하합니다, 퍼즐을 모두 맞췄어요!
+정말 게임 데이터를 초기화할까요?
+게임을 종료할까요?
+
+=== es-ES ===
+Desbloqueado al completar el juego una vez
+Aún faltan 3/12 piezas del puzle para desbloquear
+1. Haz clic en la primera pieza que quieras mover: se resaltará. Luego haz clic en una segunda pieza distinta; las dos intercambian su posición al instante.
+2. Puedes seguir intercambiando. Cuando la imagen sea completa y coherente, superas el nivel.
+Querido amigo:
+Lamento no haberte esperado: debo ir al pueblo por un asunto urgente. La puerta no está cerrada con llave; entra y siéntete como en casa.
+Hay muchos diablillos en la casa; si te sientes solo, pasa el rato con ellos.
+Por cierto: el puzle sin terminar en la silla junto a la ventana — parece que han perdido algunas piezas. Si puedes, échales un vistazo.
+¡Enhorabuena, has completado el puzzle!
+¿Seguro que quieres restablecer los datos del juego?
+¿Salir del juego?
+
+=== es-419 ===
+Se desbloquea al terminar el juego una vez
+Todavía faltan 3/12 piezas del rompecabezas para desbloquear
+1. Haz clic en la primera pieza que quieras mover: se resaltará. Luego haz clic en una segunda pieza distinta; las dos intercambian su lugar al instante.
+2. Podés seguir intercambiando. Cuando la imagen quede completa y coherente, pasás el nivel.
+Querido amigo:
+Lamento no haberte esperado: tengo que ir al pueblo por un asunto urgente. La puerta no está con llave; entrá y sentite como en casa.
+Hay muchos traviesos en la casa; si te sentís solo, pasá el rato con ellos.
+Por cierto: el rompecabezas sin terminar en la silla junto a la ventana — parece que perdieron algunas piezas. Si podés, ayudame a buscarlas.
+¡Felicitaciones! Completaste el rompecabezas.
+¿Seguro que querés restablecer los datos del juego?
+¿Salir del juego?
+
+=== zh-TW ===
+首次通關拼圖遊戲後解鎖
+還需要 3/12 塊拼圖解鎖
+1、用滑鼠點選第一塊您想移動的拼圖，它會高亮顯示。接著點選第二塊不同的拼圖，這兩塊拼圖的位置會立即互相交換。
+2、您可以不斷重複點擊交換的操作，當構成一幅完整、連貫的畫面時遊戲即可通關。
+親愛的朋友：
+很遺憾沒能等到你，我得先趕到小鎮處理要事。房門未鎖，請像回家一樣，隨意進來坐坐。
+屋裡有不少小搗蛋，若覺得寂寞，不妨與牠們作伴。
+對了，窗邊椅子上那幅未完成的拼圖，似乎被牠們弄丟了幾片。若你願意，請幫我留意尋找。
+恭喜，已經完成拼圖囉！
+確定要重置遊戲資料嗎？
+結束遊戲？
+
+=== ru-RU ===
+Открывается после первого прохождения игры
+Нужно ещё 3/12 фрагментов пазла для разблокировки
+1. Нажмите на первый фрагмент, который хотите сдвинуть — он подсветится. Затем нажмите на второй, другой фрагмент: они сразу поменяются местами.
+2. Можно продолжать менять местами. Когда картина сложится полностью и гармонично, уровень пройден.
+Мой дорогой друг,
+жаль, что не дождался тебя — мне срочно нужно в город. Дверь не заперта; заходи и чувствуй себя как дома.
+В доме полно маленьких проказников; если станет одиноко, проведи время с ними.
+Кстати, недоделанный пазл на стуле у окна — кажется, они потеряли несколько деталей. Если не сложно, поищи, пожалуйста.
+Поздравляем! Вы собрали пазл.
+Вы уверены, что хотите сбросить данные игры?
+Выйти из игры?
+
+=== th-TH ===
+ปลดล็อกหลังผ่านเกมครั้งแรก
+ยังต้องการชิ้นปริศนา 3/12 ชิ้นเพื่อปลดล็อก
+1. คลิกชิ้นปริศนาชิ้นแรกที่ต้องการขยับ — ชิ้นนั้นจะถูกไฮไลต์ จากนั้นคลิกชิ้นที่สองที่ต่างออกไป ทั้งสองชิ้นจะสลับตำแหน่งทันที
+2. คุณสลับได้เรื่อย ๆ เมื่อภาพสมบูรณ์และต่อเนื่อง คุณจะผ่านด่าน
+เพื่อนที่รัก
+เสียใจที่รอเธอไม่ทัน — ฉันต้องรีบไปเมืองเรื่องด่วน ประตูไม่ได้ล็อก เข้ามานั่งได้เหมือนอยู่บ้าน
+ในบ้านมีตัวซน ๆ เยอะ ถ้าเหงา ลองอยู่กับพวกมัน
+อ้อ ปริศนาที่ยังทำไม่เสร็จบนเก้าอี้ริมหน้าต่าง — ดูเหมือนพวกมันทำชิ้นหายไปหลายชิ้น ถ้าไม่รบกวน ช่วยช่วยมองหาให้หน่อย
+ยินดีด้วย คุณต่อปริศนาจนสำเร็จแล้ว!
+คุณแน่ใจหรือไม่ว่าต้องการรีเซ็ตข้อมูลเกม?
+ออกจากเกม?
+
+=== ja-JP ===
+初めてゲームをクリアすると解放
+あと3/12枚のパズルピースが必要です
+1. 動かしたい最初のピースをクリックするとハイライトされます。続いて別の2枚目をクリックすると、2枚はすぐに入れ替わります。
+2. 繰り返し交換できます。絵が一枚の完成した絵としてつながったらクリアです。
+親愛なる友人へ
+待てなくて残念だ — 急用で町へ行かなければならない。鍵はかけていないから、家のように気楽に上がってきて。
+家の中には小さないたずらっ子がたくさんいる。寂しければ一緒に過ごしてごらん。
+そうだ、窓際の椅子の上の未完成のパズル — ピースを何枚かなくしたみたい。よければ探してくれると嬉しい。
+おめでとうございます。パズルが完成しました！
+ゲームデータをリセットしてもよろしいですか？
+ゲームを終了しますか？
+
+=== pt-PT ===
+Desbloqueado após concluíres o jogo uma vez
+Ainda faltam 3/12 peças do puzzle para desbloquear
+1. Clica na primeira peça que queres mover — fica destacada. Depois clica numa segunda peça diferente; as duas trocam de lugar de imediato.
+2. Podes continuar a trocar. Quando a imagem estiver completa e coerente, passas o nível.
+Meu querido amigo,
+lamento não ter podido esperar — tenho de ir à cidade por um assunto urgente. A porta não está trancada; entra e fica à vontade, como em casa.
+Há muitos diabretes pela casa; se te sentires sozinho, passa o tempo com eles.
+A propósito: o puzzle inacabado na cadeira junto à janela — parece que perderam algumas peças. Se puderes, ajuda-me a procurá-las.
+Parabéns! Completaste o puzzle.
+Tens a certeza de que queres repor os dados do jogo?
+Sair do jogo?
+
+=== pl-PL ===
+Odblokowane po pierwszym ukończeniu gry
+Potrzebujesz jeszcze 3/12 elementów układanki, aby odblokować
+1. Kliknij pierwszy element, który chcesz przesunąć — zostanie podświetlony. Potem kliknij drugi, inny element; od razu zamienią się miejscami.
+2. Możesz dalej zamieniać. Gdy obraz będzie kompletny i spójny, przechodzisz poziom.
+Drogi przyjacielu,
+żal, że nie zdążyłem na ciebie — muszę pilnie jechać do miasta. Drzwi nie są zamknięte na klucz; wejdź i czuj się jak w domu.
+W domu jest mnóstwo małych psotników; jeśli poczujesz się samotnie, spędź z nimi czas.
+A propos: niedokońana układanka na krześle przy oknie — zdają się zgubić kilka elementów. Jeśli możesz, rozejrzyj się za nimi.
+Gratulacje! Ukończyłeś układankę.
+Czy na pewno chcesz zresetować dane gry?
+Zamknąć grę?
+
+=== da-DK ===
+Låses op efter første gennemførsel af spillet
+Der mangler stadig 3/12 puslespilsbrikker for at låse op
+1. Klik på den første brik, du vil flytte — den fremhæves. Klik derefter på en anden brik; de to bytter straks plads.
+2. Du kan blive ved med at bytte. Når billedet er fuldt og sammenhængende, består du niveauet.
+Kære ven,
+jeg beklager, at jeg ikke kunne vente — jeg må skynde mig til byen på vigtig ærinde. Døren er ikke låst; kom ind og føl dig hjemme.
+Der er masser af små drillenisser i huset; hvis du keder dig, så brug tid sammen med dem.
+For resten: det ufærdige puslespil på stolen ved vinduet — det ser ud til, de har mistet nogle brikker. Hvis du vil, så hold udkig.
+Tillykke! Du har færdiggjort puslespillet.
+Er du sikker på, at du vil nulstille spildata?
+Afslut spillet?
+
+=== nl-NL ===
+Ontgrendeld na het eenmaal uitspelen van de game
+Je hebt nog 3/12 puzzelstukken nodig om te ontgrendelen
+1. Klik op het eerste stuk dat je wilt verplaatsen — het wordt gemarkeerd. Klik daarna op een tweede, ander stuk; ze wisselen direct van plek.
+2. Je kunt blijven wisselen. Als het beeld compleet en samenhangend is, haal je het level.
+Beste vriend,
+het spijt me dat ik niet op je heb kunnen wachten — ik moet dringend naar de stad. De deur zit niet op slot; kom binnen en voel je thuis.
+Er zijn genoeg kleine stoute rakkers in huis; als je je eenzaam voelt, breng dan tijd met ze door.
+Trouwens: de onafgemaakte puzzel op de stoel bij het raam — ze lijken een paar stukjes kwijt te zijn. Als je wilt, kijk even uit.
+Gefeliciteerd! Je hebt de puzzel voltooid.
+Weet je zeker dat je de spelgegevens wilt resetten?
+Spel afsluiten?
+
+=== fi-FI ===
+Avautuu ensimmäisen läpipeluun jälkeen
+Tarvitaan vielä 3/12 palaa avaukseen
+1. Napsauta ensimmäistä siirrettävää palaa — se korostuu. Napsauta sitten toista, eri palaa; ne vaihtavat paikkaa heti.
+2. Voit jatkaa vaihtamista. Kun kuva on täydellinen ja yhtenäinen, läpäiset tason.
+Rakas ystävä,
+harmi, etten ehtinyt odottaa — minun on mentävä kiireellisesti kaupunkiin. Ovi ei ole lukossa; tule sisään ja ole kuin kotona.
+Talossa on paljon pieniä veitikoita; jos ikävöit, vietä aikaa niiden kanssa.
+Muuten: ikkunan vieressä tuolilla oleva keskeneräinen palapeli — näyttää siltä, että he ovat kadottaneet muutaman palan. Jos jaksat, pidä silmät auki.
+Onnittelut! Olet saanut palapelin valmiiksi.
+Haluatko varmasti nollata pelitiedot?
+Lopetetaanko peli?
+
+=== nb-NO ===
+Låses opp etter første gjennomføring av spillet
+Du trenger fortsatt 3/12 puslespillbrikker for å låse opp
+1. Klikk på den første brikken du vil flytte — den markeres. Klikk deretter på en annen brikke; de to bytter plass med én gang.
+2. Du kan fortsette å bytte. Når bildet er fullstendig og sammenhengende, består du nivået.
+Kjære venn,
+jeg beklager at jeg ikke rakk å vente — jeg må skynde meg til byen på viktig ærend. Døren er ikke låst; kom inn og føl deg hjemme.
+Det er mange små rampete typer i huset; hvis du kjeder deg, tilbring tid med dem.
+Forresten: det uferdige puslespillet på stolen ved vinduet — det ser ut som de har mistet noen brikker. Hvis du vil, hold utkikk.
+Gratulerer! Du har fullført puslespillet.
+Er du sikker på at du vil tilbakestille spilldata?
+Avslutte spillet?
+
+=== sv-SE ===
+Låses upp efter att du spelat klart spelet en gång
+Du behöver fortfarande 3/12 pusselbitar för att låsa upp
+1. Klicka på den första bit du vill flytta — den markeras. Klicka sedan på en andra, annan bit; de två byter plats direkt.
+2. Du kan fortsätta byta. När bilden är fullständig och sammanhängande klarar du nivån.
+Käre vän,
+jag hann tyvärr inte vänta — jag måste skynda till stan på ett viktigt ärende. Dörren är olåst; kom in och känn dig hemma.
+Det finns massor av små rackare i huset; om du känner dig ensam, umgås med dem.
+Förresten: det ofärdiga pusslet på stolen vid fönstret — de verkar ha tappat bort några bitar. Om du orkar, håll utkik.
+Grattis! Du har klarat pusslet.
+Är du säker på att du vill återställa speldata?
+Avsluta spelet?
+
+=== hu-HU ===
+Feloldódik, miután először végigjátszottad a játékot
+Még 3/12 puzzle-darab kell a feloldáshoz
+1. Kattints az első mozgatni kívánt darabra — kiemelődik. Aztán kattints egy második, más darabra; a kettő azonnal megcserélődik.
+2. Tovább cserélgethetsz. Ha a kép teljes és összefüggő, teljesíted a szintet.
+Kedves barátom,
+sajnálom, hogy nem tudtalak megvárni — sürgősen a városba kell mennem. Az ajtó nincs zárva; gyere be, és érezd otthon magad.
+Rengeteg kis csínytevő van a házban; ha magányos vagy, tölts velük időt.
+Egyébként: a félkész puzzle a széken az ablaknál — úgy tűnik, néhány darabot elveszítettek. Ha tudod, szétnéznél.
+Gratulálunk! Elkészítetted a puzzle-t.
+Biztosan vissza szeretnéd állítani a játékadatokat?
+Kilépés a játékból?
+
+=== cs-CZ ===
+Odemčeno po prvním dokončení hry
+K odemčení ještě chybí 3/12 dílků puzzle
+1. Klikni na první dílek, který chceš posunout — zvýrazní se. Pak klikni na druhý, jiný dílek; oba se okamžitě prohodí.
+2. Můžeš pokračovat v prohazování. Až je obrázek kompletní a souvislý, splníš level.
+Milý příteli,
+mrzí mě, že na tebe nemůžu počkat — musím spěchat do města kvůli naléhavé záležitosti. Dveře nejsou zamčené; pojď dál a chovej se jako doma.
+V domě je spousta malých nezbedů; pokud budeš mít smutno, stráv s nimi čas.
+Mimochodem: nedodělané puzzle na židli u okna — vypadá to, že ztratili pár dílků. Kdybys mohl, dej prosím pozor.
+Gratulujeme! Dokončil jsi puzzle.
+Opravdu chceš obnovit herní data?
+Ukončit hru?
+
+=== ro-RO ===
+Deblocat după ce termini jocul o dată
+Mai ai nevoie de 3/12 piese de puzzle pentru deblocare
+1. Apasă prima piesă pe care vrei să o muți — se evidențiază. Apoi apasă o a doua piesă diferită; cele două își schimbă locul imediat.
+2. Poți continua să schimbi. Când imaginea e completă și coerentă, treci nivelul.
+Dragă prietene,
+îmi pare rău că nu te-am putut aștepta — trebuie să plec urgent în oraș. Ușa nu e încuiată; intră și fii ca acasă.
+Sunt o grămadă de micuți obraznici în casă; dacă te simți singur, petrece timp cu ei.
+Apropo: puzzle-ul neterminat de pe scaunul de la fereastră — se pare că au pierdut câteva piese. Dacă poți, te rog caută.
+Felicitări! Ai terminat puzzle-ul.
+Sigur vrei să resetezi datele jocului?
+Ieși din joc?
+
+=== tr-TR ===
+Oyunu ilk kez bitirdikten sonra açılır
+Kilidini açmak için hâlâ 3/12 yapboz parçası gerekiyor
+1. Taşımak istediğin ilk parçaya tıkla — vurgulanır. Sonra farklı bir ikinci parçaya tıkla; ikisi hemen yer değiştirir.
+2. Böyle devam edebilirsin. Görüntü eksiksiz ve tutarlı olduğunda bölümü geçersin.
+Sevgili dostum,
+seni bekleyemediğim için üzgünüm — acil bir iş için kasabaya gitmem gerekiyor. Kapı kilitli değil; içeri gel, kendi evinde gibi hisset.
+Evde bir sürü küçük yaramaz var; yalnız hissedersen onlarla vakit geçir.
+Bu arada, pencere kenarındaki sandalyedeki bitmemiş yapboz — birkaç parçayı kaybetmişler gibi görünüyor. Mümkünse göz kulak ol.
+Tebrikler! Yapbozu tamamladın.
+Oyun verilerini sıfırlamak istediğine emin misin?
+Oyundan çıkılsın mı?
+
+=== pt-BR ===
+Liberado depois de zerar o jogo uma vez
+Ainda faltam 3/12 peças do quebra-cabeça para liberar
+1. Clique na primeira peça que quer mover — ela destaca. Depois clique numa segunda peça diferente; as duas trocam de lugar na hora.
+2. Você pode continuar trocando. Quando a imagem estiver completa e coerente, você passa de fase.
+Querido amigo,
+sinto muito não ter podido esperar — preciso ir à cidade por um assunto urgente. A porta não está trancada; entra e fica à vontade, como em casa.
+Tem um monte de pequenos arteiros na casa; se sentir solidão, passe o tempo com eles.
+Aliás: o quebra-cabeça inacabado na cadeira perto da janela — parece que perderam algumas peças. Se puder, ajuda a procurar.
+Parabéns! Você completou o quebra-cabeça.
+Tem certeza de que quer redefinir os dados do jogo?
+Sair do jogo?
+
+=== bg-BG ===
+Отключва се след първо завършване на играта
+Още са нужни 3/12 части от пъзела за отключване
+1. Щракни върху първата част, която искаш да преместиш — ще се подсвети. После щракни върху втора, различна част; двете веднага си разменят местата.
+2. Можеш да продължиш да разменяш. Когато картината е пълна и последователна, минаваш нивото.
+Скъпи приятелю,
+съжалявам, че не успях да те изчакам — трябва спешно да отида в града. Вратата не е заключена; влез и се чувствай като у дома.
+В къщата има много малки палавници; ако ти е самотно, прекарай време с тях.
+Между другото: недовършеният пъзел на стола до прозореца — изглежда са изгубили няколко части. Ако можеш, помогни да ги потърсиш.
+Поздравления! Завършихте пъзела.
+Сигурни ли сте, че искате да нулирате данните на играта?
+Изход от играта?
+
+=== el-GR ===
+Ξεκλειδώνεται αφού ολοκληρώσεις το παιχνίδι μία φορά
+Χρειάζονται ακόμα 3/12 κομμάτια παζλ για ξεκλείδωμα
+1. Κάνε κλικ στο πρώτο κομμάτι που θέλεις να μετακινήσεις — θα επισημανθεί. Μετά κάνε κλικ σε ένα δεύτερο, διαφορετικό κομμάτι· τα δύο αλλάζουν θέση αμέσως.
+2. Μπορείς να συνεχίσεις τις ανταλλαγές. Όταν η εικόνα είναι πλήρης και συνεκτική, περνάς το επίπεδο.
+Αγαπητέ φίλε,
+λυπάμαι που δεν πρόλαβα να σε περιμένω — πρέπει να πάω επειγόντως στην πόλη. Η πόρτα δεν είναι κλειδωμένη· μπες και νιώσε σαν στο σπίτι σου.
+Υπάρχουν πολλά μικρά σκανδαλιάρικα στο σπίτι· αν νιώσεις μοναξιά, πέρασε χρόνο μαζί τους.
+Παρεμπιπτόντως: το ημιτελές παζλ στην καρέκλα δίπλα στο παράθυρο — φαίνεται ότι έχασαν μερικά κομμάτια. Αν μπορείς, κράτα τα μάτια σου ανοιχτά.
+Συγχαρητήρια! Ολοκλώσατε το παζλ.
+Είστε σίγουροι ότι θέλετε να επαναφέρετε τα δεδομένα παιχνιδιού;
+Έξοδος από το παιχνίδι;
+
+=== uk-UA ===
+Відкривається після першого проходження гри
+Потрібно ще 3/12 фрагментів пазла для розблокування
+1. Натисни перший фрагмент, який хочеш зрушити — він підсвітиться. Потім натисни другий, інший фрагмент; вони одразу поміняються місцями.
+2. Можна продовжувати міняти. Коли картина повна й узгоджена, ти проходиш рівень.
+Мій дорогий друже,
+шкода, що не зміг дочекатися — мені терміново треба в місто. Двері не зачинені; заходь і почувайся як вдома.
+У домі повно маленьких проказників; якщо буде самотньо, проведи з ними час.
+До речі: незавершений пазл на стільці біля вікна — здається, вони загубили кілька фрагментів. Якщо можеш, пошукай, будь ласка.
+Вітаємо! Ви склали пазл.
+Ви впевнені, що хочете скинути ігрові дані?
+Вийти з гри?
+
+=== vi-VN ===
+Mở khóa sau khi hoàn thành game lần đầu
+Còn cần 3/12 mảnh ghép để mở khóa
+1. Nhấp vào mảnh đầu tiên bạn muốn di chuyển — mảnh đó sẽ được tô sáng. Sau đó nhấp vào mảnh thứ hai khác; hai mảnh sẽ đổi chỗ ngay lập tức.
+2. Bạn có thể tiếp tục đổi. Khi hình hoàn chỉnh và liền mạch, bạn qua màn.
+Bạn thân mến,
+tiếc là mình không đợi bạn kịp — mình phải vào thị trấn gấp vì việc quan trọng. Cửa không khóa; cứ vào và tự nhiên như ở nhà.
+Trong nhà có nhiều “quỷ nhỏ”; nếu thấy cô đơn, hãy chơi cùng chúng.
+Nhân tiện: bức tranh ghép dở trên ghế cạnh cửa sổ — có vẻ chúng làm mất vài mảnh. Nếu bạn rảnh, giúp mình tìm nhé.
+Chúc mừng, bạn đã hoàn thành tranh ghép!
+Bạn có chắc muốn đặt lại dữ liệu game không?
+Thoát game?
+
+=== id-ID ===
+Terbuka setelah menyelesaikan permainan sekali
+Masih perlu 3/12 keping puzzle untuk membuka
+1. Klik keping pertama yang ingin kamu pindahkan — akan disorot. Lalu klik keping kedua yang berbeda; keduanya langsung bertukar tempat.
+2. Kamu bisa terus menukar. Saat gambar utuh dan menyatu, kamu menyelesaikan level.
+Sahabatku yang baik,
+maaf aku tidak bisa menunggu — ada urusan mendesak ke kota. Pintu tidak dikunci; silakan masuk dan betah seperti di rumah sendiri.
+Ada banyak si kecil yang nakal di rumah; jika merasa sepi, luangkan waktu bersama mereka.
+Ngomong-ngomong, puzzle yang belum selesai di kursi dekat jendela — sepertinya mereka kehilangan beberapa keping. Kalau bisa, tolong cari ya.
+Selamat! Kamu sudah menyelesaikan puzzle-nya.
+Yakin ingin mengatur ulang data game?
+Keluar dari game?
