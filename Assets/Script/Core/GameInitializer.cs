@@ -197,6 +197,18 @@ namespace HiddenCats.Core
                 }
             }
 
+            // Ensure GameCompletionService exists (for normal mode completion)
+            if (GameCompletionService.Instance == null)
+            {
+                GameCompletionService existingCompletion = FindFirstObjectByType<GameCompletionService>();
+                if (existingCompletion == null)
+                {
+                    GameObject completionServiceObj = new GameObject("GameCompletionService");
+                    completionServiceObj.AddComponent<GameCompletionService>();
+                    DontDestroyOnLoad(completionServiceObj);
+                }
+            }
+
             // Check LocalizationManager (must be manually created in scene with LanguageConfig assigned)
             if (LocalizationManager.Instance == null)
             {

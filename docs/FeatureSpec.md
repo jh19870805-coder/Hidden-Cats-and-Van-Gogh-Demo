@@ -542,7 +542,35 @@
 
 ---
 
-## 13. 拼图小游戏系统（Puzzle）
+## 13. 游戏完成系统（GameCompletionService）
+
+### 13.1 职责
+
+- 在普通模式（非竞速）下，检测玩家是否找到了所有普通猫和隐藏猫
+- 当满足完成条件时显示 `WinPop` 结算界面
+- 记录游戏完成状态（用于排行榜解锁等）
+
+### 13.2 与竞速模式的区分
+
+| 项目 | 普通模式 | 竞速模式 |
+|------|---------|----------|
+| **完成检测** | `GameCompletionService` | `SpeedrunService` |
+| **完成条件** | 找到所有普通猫 + 隐藏猫 | 找到所有普通猫 + 隐藏猫（独立存档） |
+| **结算界面** | `WinPop` | `WinPop` |
+| **完成后操作** | 返回主界面 | 返回主界面 + 记录排行榜 |
+
+### 13.3 当前实现
+
+- `Assets/Script/Core/GameCompletionService.cs`
+- 通过 `CollectionService.OnGlobalCountChanged` 事件监听收集进度
+- 使用 `UnlockChecker.TryGetTotalCatsForSpeedrun` 获取目标总数
+- 在 `WindowManager.CurrentWindow` 下查找 `WinPop` 节点并显示
+- `GameInitializer` 负责初始化单例
+- `GameProgressResetService` 负责重置完成状态
+
+---
+
+## 14. 拼图小游戏系统（Puzzle）
 
 ### 13.1 系统规则（当前实现）
 

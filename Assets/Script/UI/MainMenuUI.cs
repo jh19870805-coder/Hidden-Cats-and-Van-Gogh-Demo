@@ -191,11 +191,36 @@ public sealed class MainMenuUI : MonoBehaviour
         WindowManager.Instance.ShowSettingPopup();
     }
 
+    public void OnClick_OpenDiscord()
+    {
+        const string discordUrl = "https://discord.gg/sfmNFEF5ec";
+        Application.OpenURL(discordUrl);
+        Debug.Log($"[MainMenuUI] Opening Discord: {discordUrl}");
+    }
+
+    public void OnClick_OpenQQ()
+    {
+        const string qqUrl = "https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Ke5OfLu0c2EBkNiyKug4DBbHYMlTTkWW&authKey=CXj1XfLtp7Xv4hRHsSAyuXMEHCGPz45KKD4vM%2B7nyRyudAOG45KVzBN%2BS4SJjOZw&noverify=0&group_code=1079431440";
+        Application.OpenURL(qqUrl);
+        Debug.Log($"[MainMenuUI] Opening QQ group: {qqUrl}");
+    }
+
     public void OnClick_OpenRank()
     {
         if (WindowManager.Instance == null)
         {
             Debug.LogError("[MainMenuUI] WindowManager.Instance is null.");
+            return;
+        }
+
+        // Demo version: always show locked hint, never open rank
+        bool isDemoMode = true;
+        if (isDemoMode)
+        {
+            string hint = LocalizationManager.Instance != null
+                ? LocalizationManager.Instance.GetText(KeyTrophyLockHint)
+                : rankUnlockHint;
+            ShowUnlockHint(hint);
             return;
         }
 
@@ -353,34 +378,40 @@ public sealed class MainMenuUI : MonoBehaviour
 
     public void UpdateTrophyVisual()
     {
+        // Demo version: trophy and speedrun toggle are always locked/hidden regardless of actual completion state
         bool isUnlocked = bypassRankUnlockCheck || UnlockChecker.IsSpeedrunUnlocked();
+        bool isDemoMode = true; // Demo version: always show locked state
 
         if (trophyButtonImage != null)
         {
-            if (isUnlocked && unlockedTrophySprite != null)
+            if (isUnlocked && !isDemoMode && unlockedTrophySprite != null)
             {
                 trophyButtonImage.sprite = unlockedTrophySprite;
             }
-            else if (!isUnlocked && lockedTrophySprite != null)
+            else if (lockedTrophySprite != null)
             {
+                // Demo mode: always show locked sprite
                 trophyButtonImage.sprite = lockedTrophySprite;
             }
 
             // Important: trophy button may still have a legacy SimpleBubbleHint component attached.
             // When unlocked, clicking should ONLY open RankPop and should NOT show the hint bubble.
+            // Demo mode: always keep the hint enabled (locked state)
             if (trophyButtonImage.TryGetComponent<SimpleBubbleHint>(out var simpleHint) && simpleHint != null)
             {
-                simpleHint.enabled = !isUnlocked;
+                simpleHint.enabled = !isUnlocked || isDemoMode;
             }
         }
 
+        // Demo version: speedrun toggle is always hidden
         if (speedrunToggleRoot != null)
         {
-            speedrunToggleRoot.SetActive(isUnlocked);
+            speedrunToggleRoot.SetActive(false);
         }
 
+        // Reward particles are always hidden in demo mode
         MigrateLegacyRewardDismissPrefs();
-        ApplySpeedrunUnlockRewardState(isUnlocked);
+        ApplySpeedrunUnlockRewardState(isUnlocked && !isDemoMode);
     }
 
     /// <summary>

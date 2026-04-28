@@ -41,6 +41,7 @@ Bahasa Indonesia
 恭喜，已经完成拼图啦！
 确定要重置游戏数据吗？
 退出游戏？
+功能暂未开放，可尝试正式版
 
 === en-US ===
 Unlocked after clearing the puzzle game once.
@@ -54,6 +55,7 @@ By the way, the unfinished puzzle on the chair by the window — they seem to ha
 Congratulations! You have completed the puzzle.
 Are you sure you want to reset game data?
 Quit the game?
+Feature not yet available, try the official version.
 
 === de-DE ===
 Freigeschaltet nach dem ersten Abschluss des Spiels
@@ -67,6 +69,7 @@ Im Haus gibt es jede Menge kleiner Schelme; wenn du dich einsam fühlst, vertrei
 Herzlichen Glückwunsch! Du hast das Puzzle abgeschlossen.
 Bist du sicher, dass du die Spieldaten zurücksetzen möchtest?
 Spiel beenden?
+Funktion noch nicht verfügbar, probiere die Vollversion.
 
 === fr-FR ===
 Débloqué après avoir terminé le jeu une fois
@@ -80,6 +83,7 @@ Il y a plein de petites friponnes dans la maison ; si tu t’ennuies, passe du t
 Toutes nos félicitations ! Vous avez terminé le puzzle.
 Voulez-vous vraiment réinitialiser les données du jeu ?
 Quitter le jeu ?
+Fonctionnalité pas encore disponible, essaie la version officielle.
 
 === it-IT ===
 Sbloccato dopo aver completato il gioco una volta
@@ -93,6 +97,7 @@ A proposito: il puzzle incompleto sulla sedia vicino alla finestra — sembra ch
 Congratulazioni! Hai completato il puzzle.
 Vuoi davvero reimpostare i dati di gioco?
 Uscire dal gioco?
+Funzione non ancora disponibile, prova la versione completa.
 
 === ko-KR ===
 게임을 처음 클리어한 뒤 해금
@@ -106,6 +111,7 @@ Uscire dal gioco?
 축하합니다, 퍼즐을 모두 맞췄어요!
 정말 게임 데이터를 초기화할까요?
 게임을 종료할까요?
+아직 기능이 열리지 않았어요. 정식 버전을 기대해 주세요.
 
 === es-ES ===
 Desbloqueado al completar el juego una vez
@@ -119,6 +125,7 @@ Por cierto: el puzle sin terminar en la silla junto a la ventana — parece que 
 ¡Enhorabuena, has completado el puzzle!
 ¿Seguro que quieres restablecer los datos del juego?
 ¿Salir del juego?
+Función aún no disponible, prueba la versión oficial.
 
 === es-419 ===
 Se desbloquea al terminar el juego una vez
@@ -132,6 +139,7 @@ Por cierto: el rompecabezas sin terminar en la silla junto a la ventana — pare
 ¡Felicitaciones! Completaste el rompecabezas.
 ¿Seguro que querés restablecer los datos del juego?
 ¿Salir del juego?
+Función todavía no disponible, probá la versión oficial.
 
 === zh-TW ===
 首次通關拼圖遊戲後解鎖
@@ -145,6 +153,7 @@ Por cierto: el rompecabezas sin terminar en la silla junto a la ventana — pare
 恭喜，已經完成拼圖囉！
 確定要重置遊戲資料嗎？
 結束遊戲？
+功能暫未開放，可嘗試正式版
 
 === ru-RU ===
 Открывается после первого прохождения игры
@@ -158,6 +167,7 @@ Por cierto: el rompecabezas sin terminar en la silla junto a la ventana — pare
 Поздравляем! Вы собрали пазл.
 Вы уверены, что хотите сбросить данные игры?
 Выйти из игры?
+Функция пока недоступна, попробуйте полную версию.
 
 === th-TH ===
 ปลดล็อกหลังผ่านเกมครั้งแรก
@@ -171,6 +181,7 @@ Por cierto: el rompecabezas sin terminar en la silla junto a la ventana — pare
 ยินดีด้วย คุณต่อปริศนาจนสำเร็จแล้ว!
 คุณแน่ใจหรือไม่ว่าต้องการรีเซ็ตข้อมูลเกม?
 ออกจากเกม?
+ฟังก์ชันยังไม่พร้อมใช้งาน ลองเวอร์ชันเต็มดูนะ
 
 === ja-JP ===
 初めてゲームをクリアすると解放
@@ -184,6 +195,7 @@ Por cierto: el rompecabezas sin terminar en la silla junto a la ventana — pare
 おめでとうございます。パズルが完成しました！
 ゲームデータをリセットしてもよろしいですか？
 ゲームを終了しますか？
+この機能はまだ利用できません。正式版をお待ちください。
 
 === pt-PT ===
 Desbloqueado após concluíres o jogo uma vez
@@ -197,6 +209,7 @@ A propósito: o puzzle inacabado na cadeira junto à janela — parece que perde
 Parabéns! Completaste o puzzle.
 Tens a certeza de que queres repor os dados do jogo?
 Sair do jogo?
+Funcionalidade ainda não disponível, experimenta a versão completa.
 
 === pl-PL ===
 Odblokowane po pierwszym ukończeniu gry
@@ -210,6 +223,7 @@ A propos: niedokońana układanka na krześle przy oknie — zdają się zgubić
 Gratulacje! Ukończyłeś układankę.
 Czy na pewno chcesz zresetować dane gry?
 Zamknąć grę?
+Funkcja jeszcze niedostępna, wypróbuj pełną wersję.
 
 === da-DK ===
 Låses op efter første gennemførsel af spillet
@@ -223,6 +237,7 @@ For resten: det ufærdige puslespil på stolen ved vinduet — det ser ud til, d
 Tillykke! Du har færdiggjort puslespillet.
 Er du sikker på, at du vil nulstille spildata?
 Afslut spillet?
+Funktion endnu ikke tilgængelig, prøv den fulde version.
 
 === nl-NL ===
 Ontgrendeld na het eenmaal uitspelen van de game
@@ -236,6 +251,7 @@ Trouwens: de onafgemaakte puzzel op de stoel bij het raam — ze lijken een paar
 Gefeliciteerd! Je hebt de puzzel voltooid.
 Weet je zeker dat je de spelgegevens wilt resetten?
 Spel afsluiten?
+Functie nog niet beschikbaar, probeer de volledige versie.
 
 === fi-FI ===
 Avautuu ensimmäisen läpipeluun jälkeen
@@ -249,6 +265,7 @@ Muuten: ikkunan vieressä tuolilla oleva keskeneräinen palapeli — näyttää 
 Onnittelut! Olet saanut palapelin valmiiksi.
 Haluatko varmasti nollata pelitiedot?
 Lopetetaanko peli?
+Toiminto ei ole vielä käytettävissä, kokeile täysversiota.
 
 === nb-NO ===
 Låses opp etter første gjennomføring av spillet
@@ -262,6 +279,7 @@ Forresten: det uferdige puslespillet på stolen ved vinduet — det ser ut som d
 Gratulerer! Du har fullført puslespillet.
 Er du sikker på at du vil tilbakestille spilldata?
 Avslutte spillet?
+Funksjonen er ennå ikke tilgjengelig, prøv fullversjonen.
 
 === sv-SE ===
 Låses upp efter att du spelat klart spelet en gång
@@ -275,6 +293,7 @@ Förresten: det ofärdiga pusslet på stolen vid fönstret — de verkar ha tapp
 Grattis! Du har klarat pusslet.
 Är du säker på att du vill återställa speldata?
 Avsluta spelet?
+Funktionen är ännu inte tillgänglig, prova fullversionen.
 
 === hu-HU ===
 Feloldódik, miután először végigjátszottad a játékot
@@ -288,6 +307,7 @@ Egyébként: a félkész puzzle a széken az ablaknál — úgy tűnik, néhány
 Gratulálunk! Elkészítetted a puzzle-t.
 Biztosan vissza szeretnéd állítani a játékadatokat?
 Kilépés a játékból?
+A funkció még nem elérhető, próbáld ki a teljes verziót.
 
 === cs-CZ ===
 Odemčeno po prvním dokončení hry
@@ -301,6 +321,7 @@ Mimochodem: nedodělané puzzle na židli u okna — vypadá to, že ztratili p�
 Gratulujeme! Dokončil jsi puzzle.
 Opravdu chceš obnovit herní data?
 Ukončit hru?
+Funkce zatím není dostupná, zkus plnou verzi.
 
 === ro-RO ===
 Deblocat după ce termini jocul o dată
@@ -314,6 +335,7 @@ Apropo: puzzle-ul neterminat de pe scaunul de la fereastră — se pare că au p
 Felicitări! Ai terminat puzzle-ul.
 Sigur vrei să resetezi datele jocului?
 Ieși din joc?
+Funcția nu este încă disponibilă, încearcă versiunea completă.
 
 === tr-TR ===
 Oyunu ilk kez bitirdikten sonra açılır
@@ -327,6 +349,7 @@ Bu arada, pencere kenarındaki sandalyedeki bitmemiş yapboz — birkaç parçay
 Tebrikler! Yapbozu tamamladın.
 Oyun verilerini sıfırlamak istediğine emin misin?
 Oyundan çıkılsın mı?
+Bu özellik henüz kullanılamıyor, tam sürümü dene.
 
 === pt-BR ===
 Liberado depois de zerar o jogo uma vez
@@ -340,6 +363,7 @@ Aliás: o quebra-cabeça inacabado na cadeira perto da janela — parece que per
 Parabéns! Você completou o quebra-cabeça.
 Tem certeza de que quer redefinir os dados do jogo?
 Sair do jogo?
+Recurso ainda não disponível, experimente a versão completa.
 
 === bg-BG ===
 Отключва се след първо завършване на играта
@@ -353,6 +377,7 @@ Sair do jogo?
 Поздравления! Завършихте пъзела.
 Сигурни ли сте, че искате да нулирате данните на играта?
 Изход от играта?
+Функцията все още не е налична, опитайте пълната версия.
 
 === el-GR ===
 Ξεκλειδώνεται αφού ολοκληρώσεις το παιχνίδι μία φορά
@@ -366,6 +391,7 @@ Sair do jogo?
 Συγχαρητήρια! Ολοκλώσατε το παζλ.
 Είστε σίγουροι ότι θέλετε να επαναφέρετε τα δεδομένα παιχνιδιού;
 Έξοδος από το παιχνίδι;
+Η λειτουργία δεν είναι ακόμη διαθέσιμη, δοκιμάστε την πλήρη έκδοση.
 
 === uk-UA ===
 Відкривається після першого проходження гри
@@ -379,6 +405,7 @@ Sair do jogo?
 Вітаємо! Ви склали пазл.
 Ви впевнені, що хочете скинути ігрові дані?
 Вийти з гри?
+Функція поки недоступна, спробуйте повну версію.
 
 === vi-VN ===
 Mở khóa sau khi hoàn thành game lần đầu
@@ -392,6 +419,7 @@ Nhân tiện: bức tranh ghép dở trên ghế cạnh cửa sổ — có vẻ 
 Chúc mừng, bạn đã hoàn thành tranh ghép!
 Bạn có chắc muốn đặt lại dữ liệu game không?
 Thoát game?
+Tính năng chưa có sẵn, hãy thử phiên bản chính thức.
 
 === id-ID ===
 Terbuka setelah menyelesaikan permainan sekali
@@ -405,3 +433,4 @@ Ngomong-ngomong, puzzle yang belum selesai di kursi dekat jendela — sepertinya
 Selamat! Kamu sudah menyelesaikan puzzle-nya.
 Yakin ingin mengatur ulang data game?
 Keluar dari game?
+Fitur belum tersedia, coba versi lengkap.

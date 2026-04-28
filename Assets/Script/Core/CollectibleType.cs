@@ -23,6 +23,11 @@ namespace HiddenCats.Core
         /// <summary>
         /// Firework (烟花) - Only exists in CafeWnd scene
         /// </summary>
-        Firework = 3
+        Firework = 3,
+
+        /// <summary>
+        /// Jigsaw puzzle piece (拼图碎片) - Collectible items in various scenes
+        /// </summary>
+        Jigsaw = 4
     }
 }

@@ -37,9 +37,9 @@ namespace HiddenCats.UI
         /// <summary>
         /// 公开的切换窗口方法，供 LoadingUI 等外部脚本调用
         /// </summary>
-        public void PublicSwitchToWindow(GameObject prefab)
+        public void PublicSwitchToWindow(GameObject prefab, bool skipTransition = false)
         {
-            SwitchToWindow(prefab);
+            SwitchToWindow(prefab, skipTransition: skipTransition);
         }
 
         [Header("Window Prefabs")]
@@ -197,21 +197,29 @@ namespace HiddenCats.UI
             }
         }
 
-        private void SwitchToWindow(GameObject prefab)
+        private void SwitchToWindow(GameObject prefab, bool skipTransition = false)
         {
             if (prefab == null)
             {
-                Debug.LogError("[WindowManager] Target window prefab is not assigned.");
-                return;
-            }
-
-            if (_isSwitchingWindow)
-            {
-                Debug.LogWarning($"[WindowManager] SwitchToWindow re-entry ignored. target={prefab.name}, current={(_currentWindow != null ? _currentWindow.name : "null")}, depth={_switchDepth}");
+                Debug.LogError("[WindowManager] SwitchToWindow: Target window prefab is not assigned.");
                 return;
             }
 
             float t0 = Time.realtimeSinceStartup;
+
+            // 如果在过渡过程中再次请求切换，先强制中断当前过渡
+            if (_isSwitchingWindow)
+            {
+                Debug.LogWarning($"[WindowManager] SwitchToWindow re-entry detected. target={prefab.name}, current={(_currentWindow != null ? _currentWindow.name : "null")}, depth={_switchDepth}. Forcing reset of current transition.");
+
+                // 强制重置 WindowTransitionEffect 的状态
+                WindowTransitionEffect.Instance?.ForceReset();
+
+                // 重置自身的切换状态
+                _isSwitchingWindow = false;
+                _switchDepth = 0;
+            }
+
             _isSwitchingWindow = true;
             _switchDepth++;
 
@@ -221,6 +229,15 @@ namespace HiddenCats.UI
             HintBubbleService.ClearAll();
 
             GameObject previousWindow = _currentWindow;
+
+            // 如果要求跳过过渡或没有启用过渡效果，直接切换
+            if (skipTransition || !enableTransitionEffect || WindowTransitionEffect.Instance == null)
+            {
+                SwitchWindowImmediate(prefab, previousWindow);
+                _isSwitchingWindow = false;
+                _switchDepth = Mathf.Max(0, _switchDepth - 1);
+                return;
+            }
 
             // 根据当前窗口判断使用哪个特殊过渡配置
             // MainWnd 去其他界面时使用特殊配置
@@ -234,50 +251,41 @@ namespace HiddenCats.UI
 
             try
             {
-                if (enableTransitionEffect && WindowTransitionEffect.Instance != null)
+                if (transitionConfig != null)
                 {
-                    if (transitionConfig != null)
-                    {
-                        // 使用特殊过渡配置
-                        LetterboxController.Instance?.EnableLetterboxBackground();
-                        WindowTransitionEffect.Instance.PerformTransition(
-                            transitionConfig,
-                            () => // onMidPoint: 在 Phase2（纯色阶段）结束时切换窗口
-                            {
-                                SwitchWindowImmediate(prefab, previousWindow);
-                            },
-                            () => // onComplete: 在 Phase3 结束后清理
-                            {
-                                LetterboxController.Instance?.DisableLetterboxBackground();
-                                _isSwitchingWindow = false;
-                                _switchDepth = Mathf.Max(0, _switchDepth - 1);
-                            }
-                        );
-                    }
-                    else
-                    {
-                        // 使用默认过渡配置
-                        LetterboxController.Instance?.EnableLetterboxBackground();
-                        WindowTransitionEffect.Instance.PerformTransition(
-                            () => // onMidPoint: 在 Phase2（纯色阶段）结束时切换窗口
-                            {
-                                SwitchWindowImmediate(prefab, previousWindow);
-                            },
-                            () => // onComplete: 在 Phase3 结束后清理
-                            {
-                                LetterboxController.Instance?.DisableLetterboxBackground();
-                                _isSwitchingWindow = false;
-                                _switchDepth = Mathf.Max(0, _switchDepth - 1);
-                            }
-                        );
-                    }
-                    return;
+                    // 使用特殊过渡配置
+                    LetterboxController.Instance?.EnableLetterboxBackground();
+                    WindowTransitionEffect.Instance.PerformTransition(
+                        transitionConfig,
+                        () => // onMidPoint: 在 Phase2（纯色阶段）结束时切换窗口
+                        {
+                            SwitchWindowImmediate(prefab, previousWindow);
+                        },
+                        () => // onComplete: 在 Phase3 结束后清理
+                        {
+                            LetterboxController.Instance?.DisableLetterboxBackground();
+                            _isSwitchingWindow = false;
+                            _switchDepth = Mathf.Max(0, _switchDepth - 1);
+                        }
+                    );
                 }
-
-                // 直接切换（无过渡效果）
-                SwitchWindowImmediate(prefab, previousWindow);
-                _isSwitchingWindow = false;
-                _switchDepth = Mathf.Max(0, _switchDepth - 1);
+                else
+                {
+                    // 使用默认过渡配置
+                    LetterboxController.Instance?.EnableLetterboxBackground();
+                    WindowTransitionEffect.Instance.PerformTransition(
+                        () => // onMidPoint: 在 Phase2（纯色阶段）结束时切换窗口
+                        {
+                            SwitchWindowImmediate(prefab, previousWindow);
+                        },
+                        () => // onComplete: 在 Phase3 结束后清理
+                        {
+                            LetterboxController.Instance?.DisableLetterboxBackground();
+                            _isSwitchingWindow = false;
+                            _switchDepth = Mathf.Max(0, _switchDepth - 1);
+                        }
+                    );
+                }
             }
             catch (Exception ex)
             {

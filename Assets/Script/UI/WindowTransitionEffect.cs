@@ -64,6 +64,32 @@ namespace HiddenCats.UI
 
         public bool IsTransitioning => _isTransitioning;
 
+        /// <summary>
+        /// 强制中断当前过渡动画并重置状态。
+        /// 用于解决用户在过渡过程中再次点击导致的卡死问题。
+        /// </summary>
+        public void ForceReset()
+        {
+            if (_transitionCoroutine != null)
+            {
+                StopCoroutine(_transitionCoroutine);
+                _transitionCoroutine = null;
+            }
+
+            if (_transitionImage != null)
+            {
+                _transitionImage.enabled = false;
+            }
+
+            if (_runtimeMaterial != null)
+            {
+                _runtimeMaterial.SetFloat("_DissolveProgress", 0f);
+            }
+
+            _isTransitioning = false;
+            Log("[ForceReset] Transition forcefully reset");
+        }
+
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -208,10 +234,8 @@ namespace HiddenCats.UI
 
             if (_isTransitioning)
             {
-                Log("[Perform] Already transitioning, skipping");
-                onMidPoint?.Invoke();
-                onComplete?.Invoke();
-                return;
+                LogWarning("[Perform] Already transitioning, forcing reset and starting new transition");
+                ForceReset();
             }
 
             if (_runtimeMaterial == null)

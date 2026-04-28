@@ -137,6 +137,13 @@ namespace HiddenCats.Core
                 Debug.Log("[GameProgressResetService] Speedrun data reset.");
             }
 
+            // Reset game completion state for normal mode
+            if (GameCompletionService.Instance != null)
+            {
+                GameCompletionService.Instance.ResetCompletionState();
+                Debug.Log("[GameProgressResetService] Game completion state reset.");
+            }
+
             // Increase reset version so all interactables (including other scenes loaded later)
             // can detect and apply this reset exactly once per object key.
             int newResetVersion = PlayerPrefs.GetInt(RESET_VERSION_KEY, 0) + 1;

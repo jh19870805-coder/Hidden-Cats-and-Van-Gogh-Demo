@@ -250,8 +250,8 @@ namespace HiddenCats.UI
                     {
                         if (enableDebugLog)
                         {
-                            Debug.LogWarning("[DogBowlVisualFeedback] No FishInteractable found in loaded scenes. " +
-                                           "This may happen if other scene prefabs are not yet loaded.");
+                            Debug.LogWarning("[DogBowlVisualFeedback] No FishInteractable found. " +
+                                           "This may happen during Loading phase before fish prefabs are loaded.");
                         }
                     }
                 }
@@ -267,16 +267,16 @@ namespace HiddenCats.UI
                 _resolvedTotalFishCount = Mathf.Max(0, totalFishCount);
                 if (enableDebugLog)
                 {
-                    Debug.Log($"[DogBowlVisualFeedback] Using fallback TotalFishCount from Inspector: {_resolvedTotalFishCount}");
-                }
-                
-                if (_resolvedTotalFishCount <= 0)
-                {
-                    Debug.LogWarning("[DogBowlVisualFeedback] Total fish count is 0! " +
-                                    "Fish images will not display correctly. " +
-                                    "Please either:\n" +
-                                    "1. Ensure autoDetectTotalFishCount can find fish (check if scene prefabs are loaded), or\n" +
-                                    "2. Set totalFishCount manually in the Inspector.");
+                    if (_resolvedTotalFishCount <= 0)
+                    {
+                        Debug.LogWarning("[DogBowlVisualFeedback] Total fish count is 0. " +
+                                        "Fish images will not display correctly. " +
+                                        "Please ensure fish prefabs are loaded or set totalFishCount manually in the Inspector.");
+                    }
+                    else
+                    {
+                        Debug.Log($"[DogBowlVisualFeedback] Using fallback TotalFishCount from Inspector: {_resolvedTotalFishCount}");
+                    }
                 }
             }
         }
@@ -391,9 +391,12 @@ namespace HiddenCats.UI
                 if (allZero && autoCalculateThresholds)
                 {
                     // Auto-calculate was requested but totalFishCount is 0, use default progressive thresholds
-                    Debug.LogWarning($"[DogBowlVisualFeedback] Auto-calculate enabled but totalFishCount is 0. " +
-                                    $"Using default progressive thresholds (1, 2, 3, 4...). " +
-                                    $"Please check autoDetectTotalFishCount or set totalFishCount manually.");
+                    if (enableDebugLog)
+                    {
+                        Debug.LogWarning("[DogBowlVisualFeedback] Auto-calculate enabled but totalFishCount is 0. " +
+                                        "Using default progressive thresholds (1, 2, 3, 4...). " +
+                                        "This may occur during Loading phase before fish prefabs are loaded.");
+                    }
                     for (int i = 0; i < fishCount; i++)
                     {
                         _thresholds[i] = i + 1; // Progressive: 1, 2, 3, 4...

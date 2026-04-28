@@ -40,6 +40,7 @@ namespace HiddenCats.Core
         private AudioClip[] _randomMiaoClips;
         private string _lastBgmResourceName = "01Main";
         private System.Collections.IEnumerator _bgmFadeOutCo;
+        private float _targetMusicVolume = 1f;
 
         private static AudioClip _cachedClickBlockClip;
         private static AudioClip _cachedFish01Clip;
@@ -76,6 +77,9 @@ namespace HiddenCats.Core
 
             // Reset to default BGM to prevent stale music from a previous session
             _lastBgmResourceName = "01Main";
+
+            // 初始化目标音量为默认设置值
+            _targetMusicVolume = 1f;
         }
 
         /// <summary>
@@ -92,6 +96,8 @@ namespace HiddenCats.Core
             EnsureSfxSource();
 
             float volume = Mathf.Clamp01(settings.masterVolume) * Mathf.Clamp01(settings.musicVolume);
+            Debug.Log($"[AudioManager] ApplySettings: masterVolume={settings.masterVolume:F4}, musicVolume={settings.musicVolume:F4}, 最终音乐音量={volume:F4}");
+            _targetMusicVolume = volume;
             musicSource.volume = volume;
 
             float sfxVolume = Mathf.Clamp01(settings.masterVolume) * Mathf.Clamp01(settings.sfxVolume);
@@ -161,6 +167,7 @@ namespace HiddenCats.Core
             }
 
             bool hasOldMusic = musicSource.clip != null && musicSource.isPlaying;
+            Debug.Log($"[AudioManager] PlayBgmByResourceName → {resourceName}, 当前音量={musicSource.volume:F4}, 有旧音乐={hasOldMusic}");
 
             _bgmFadeOutCo = CoFadeOutThenPlayNew(clip, hasOldMusic);
             StartCoroutine(_bgmFadeOutCo);
@@ -175,11 +182,12 @@ namespace HiddenCats.Core
             {
                 if (Mathf.Approximately(musicSource.volume, 0f))
                 {
-                    musicSource.volume = 0.001f;
+                    musicSource.volume = _targetMusicVolume;
                 }
                 musicSource.clip = newClip;
                 musicSource.loop = true;
                 musicSource.Play();
+                Debug.Log($"[AudioManager] 淡入新BGM={newClip.name}, 初始音量={musicSource.volume:F4}");
                 _bgmFadeOutCo = null;
                 yield break;
             }
@@ -195,14 +203,17 @@ namespace HiddenCats.Core
                 }
 
                 musicSource.volume = 0f;
+                Debug.Log($"[AudioManager] 淡出完成, 当前音量={musicSource.volume:F4}");
             }
 
             musicSource.clip = newClip;
             musicSource.loop = true;
             musicSource.Play();
-            // 渐变完成后恢复音量时，使用当前值而非缓存的 originalVolume，
-            // 避免在渐变过程中 ApplySettings 更新音量后被旧值覆盖
-            musicSource.volume = musicSource.volume > 0f ? musicSource.volume : originalVolume;
+
+            // 切换完成后恢复到目标音量（而不是 originalVolume），
+            // 避免在快速切换时音量被旧值覆盖导致越来越小
+            musicSource.volume = _targetMusicVolume;
+            Debug.Log($"[AudioManager] 切换BGM完成, 新BGM={newClip.name}, 当前音量={musicSource.volume:F4}");
 
             _bgmFadeOutCo = null;
         }
@@ -218,16 +229,20 @@ namespace HiddenCats.Core
             }
 
             string baseName = StripCloneSuffix(prefabOrInstanceName);
+            float currentVolume = musicSource != null ? musicSource.volume : 0f;
 
             switch (baseName)
             {
                 case "MainWnd":
+                    Debug.Log($"[AudioManager] 界面切换 → {baseName}, 切换前音量={currentVolume:F4}");
                     PlayBgmByResourceName("01Main");
                     break;
                 case "RoomWnd":
+                    Debug.Log($"[AudioManager] 界面切换 → {baseName}, 切换前音量={currentVolume:F4}");
                     PlayBgmByResourceName("02Room");
                     break;
                 default:
+                    Debug.Log($"[AudioManager] 界面切换 → {baseName}, 切换前音量={currentVolume:F4}");
                     break;
             }
         }

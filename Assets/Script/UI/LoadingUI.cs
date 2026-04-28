@@ -31,6 +31,10 @@ namespace HiddenCats.UI
         private int canvasSortingOrder = 30000;
 #pragma warning restore CS0414
 
+        [Header("调试")]
+        [Tooltip("启用调试日志")]
+        [SerializeField] private bool enableDebugLog = false;
+
         // 波点动画 sortingOrder = 1000
         // LoadingUI 需要在波点动画下层，所以 sortingOrder < 1000
         private const int k_LoadingSortingOrder = 999;
@@ -44,7 +48,7 @@ namespace HiddenCats.UI
 
         private void Awake()
         {
-            Debug.Log("[LoadingUI] Awake() called");
+            if (enableDebugLog) Debug.Log("[LoadingUI] Awake() called");
 
             // 设置 RectTransform 为全屏覆盖（锚点到中心）
             SetupRectTransform();
@@ -75,7 +79,7 @@ namespace HiddenCats.UI
                 rectTransform.anchorMax = Vector2.one;
                 rectTransform.sizeDelta = Vector2.zero;
                 rectTransform.anchoredPosition = Vector2.zero;
-                Debug.Log($"[LoadingUI] RectTransform 设置完成: anchorMin={rectTransform.anchorMin}, anchorMax={rectTransform.anchorMax}");
+                if (enableDebugLog) Debug.Log($"[LoadingUI] RectTransform 设置完成: anchorMin={rectTransform.anchorMin}, anchorMax={rectTransform.anchorMax}");
             }
             else
             {
@@ -83,25 +87,28 @@ namespace HiddenCats.UI
             }
 
             // 调试：检查子元素
-            Debug.Log("[LoadingUI] === 子元素列表 ===");
-            int childCount = transform.childCount;
-            Debug.Log($"[LoadingUI] 子对象数量: {childCount}");
-            for (int i = 0; i < childCount; i++)
+            if (enableDebugLog)
             {
-                Transform child = transform.GetChild(i);
-                var image = child.GetComponent<UnityEngine.UI.Image>();
-                var tmpText = child.GetComponent<TMP_Text>();
-                Debug.Log($"[LoadingUI]   [{i}] {child.name}: Image={image != null}, TMP={tmpText != null}, activeSelf={child.gameObject.activeSelf}");
-                if (image != null)
+                Debug.Log("[LoadingUI] === 子元素列表 ===");
+                int childCount = transform.childCount;
+                Debug.Log($"[LoadingUI] 子对象数量: {childCount}");
+                for (int i = 0; i < childCount; i++)
                 {
-                    Debug.Log($"[LoadingUI]      Image: enabled={image.enabled}, color={image.color}, raycastTarget={image.raycastTarget}");
+                    Transform child = transform.GetChild(i);
+                    var image = child.GetComponent<UnityEngine.UI.Image>();
+                    var tmpText = child.GetComponent<TMP_Text>();
+                    Debug.Log($"[LoadingUI]   [{i}] {child.name}: Image={image != null}, TMP={tmpText != null}, activeSelf={child.gameObject.activeSelf}");
+                    if (image != null)
+                    {
+                        Debug.Log($"[LoadingUI]      Image: enabled={image.enabled}, color={image.color}, raycastTarget={image.raycastTarget}");
+                    }
+                    if (tmpText != null)
+                    {
+                        Debug.Log($"[LoadingUI]      TMP: enabled={tmpText.enabled}, text='{tmpText.text}', color={tmpText.color}");
+                    }
                 }
-                if (tmpText != null)
-                {
-                    Debug.Log($"[LoadingUI]      TMP: enabled={tmpText.enabled}, text='{tmpText.text}', color={tmpText.color}");
-                }
+                Debug.Log("[LoadingUI] ====================");
             }
-            Debug.Log("[LoadingUI] ====================");
         }
 
         /// <summary>
@@ -115,36 +122,23 @@ namespace HiddenCats.UI
                 return;
             }
 
-            Debug.Log($"[LoadingUI] ValidateConfiguration:");
-            Debug.Log($"  renderMode: {_canvas.renderMode}");
-            Debug.Log($"  sortingOrder: {_canvas.sortingOrder}");
-            Debug.Log($"  overrideSorting: {_canvas.overrideSorting}");
-
-            // 检查是否需要修复
-            bool needsFix = false;
+            if (enableDebugLog)
+            {
+                Debug.Log($"[LoadingUI] ValidateConfiguration:");
+                Debug.Log($"  renderMode: {_canvas.renderMode}");
+                Debug.Log($"  sortingOrder: {_canvas.sortingOrder}");
+                Debug.Log($"  overrideSorting: {_canvas.overrideSorting}");
+            }
 
             // LoadingUI 的 sortingOrder 应该小于 1000（波点动画 sortingOrder）
             // 这样 Logo 和 LoadingText 会被波点动画覆盖
-            const int maxSortingOrder = k_LoadingSortingOrder;
             if (_canvas.sortingOrder != k_LoadingSortingOrder)
             {
-                Debug.LogWarning($"[LoadingUI] sortingOrder={_canvas.sortingOrder} 不是 {k_LoadingSortingOrder}，尝试修复...");
-                _canvas.sortingOrder = maxSortingOrder;
-                needsFix = true;
+                _canvas.sortingOrder = k_LoadingSortingOrder;
             }
             if (_canvas.overrideSorting != true)
             {
-                Debug.LogWarning($"[LoadingUI] overrideSorting={_canvas.overrideSorting} 不是 true，尝试修复...");
                 _canvas.overrideSorting = true;
-                needsFix = true;
-            }
-            // ScreenSpaceOverlay 模式不需要 worldCamera，不需要检查
-
-            if (needsFix)
-            {
-                Debug.Log("[LoadingUI] 配置已修复，重新验证:");
-                Debug.Log($"  sortingOrder: {_canvas.sortingOrder}");
-                Debug.Log($"  overrideSorting: {_canvas.overrideSorting}");
             }
         }
 
@@ -181,7 +175,7 @@ namespace HiddenCats.UI
                 scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
                 scaler.matchWidthOrHeight = aspectRatio >= 1f ? 1f : 0f; // 更宽以高适配，更窄以宽适配
 
-                Debug.Log($"[LoadingUI] CanvasScaler 配置: ScaleWithScreenSize, referenceResolution=2560x1440, matchWidthOrHeight={scaler.matchWidthOrHeight} (currentAspect={currentAspect:F3}, targetAspect={targetAspect:F3})");
+                if (enableDebugLog) Debug.Log($"[LoadingUI] CanvasScaler 配置: ScaleWithScreenSize, referenceResolution=2560x1440, matchWidthOrHeight={scaler.matchWidthOrHeight} (currentAspect={currentAspect:F3}, targetAspect={targetAspect:F3})");
             }
             else
             {
@@ -197,7 +191,7 @@ namespace HiddenCats.UI
                 if (existingScaler == null)
                 {
                     existingScaler = gameObject.AddComponent<CanvasScaler>();
-                    Debug.Log("[LoadingUI] 预制体缺少 CanvasScaler，已添加");
+                    if (enableDebugLog) Debug.Log("[LoadingUI] 预制体缺少 CanvasScaler，已添加");
                 }
 
                 // 配置 CanvasScaler - 使用 ScaleWithScreenSize 模式实现响应式适配
@@ -212,14 +206,17 @@ namespace HiddenCats.UI
                 existingScaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
                 existingScaler.matchWidthOrHeight = aspectRatio >= 1f ? 1f : 0f;
 
-                Debug.Log($"[LoadingUI] CanvasScaler 配置: ScaleWithScreenSize, referenceResolution=2560x1440, matchWidthOrHeight={existingScaler.matchWidthOrHeight}");
-                Debug.Log($"[LoadingUI] 实际 Canvas sortingOrder = {_canvas.sortingOrder}, overrideSorting = {_canvas.overrideSorting}");
-
-                // 打印当前所有 Canvas 的排序顺序，方便调试
-                Canvas[] allCanvases = FindObjectsOfType<Canvas>();
-                foreach (var c in allCanvases)
+                if (enableDebugLog)
                 {
-                    Debug.Log($"[LoadingUI] 发现 Canvas: {c.name}, sortingOrder={c.sortingOrder}, overrideSorting={c.overrideSorting}, renderMode={c.renderMode}, worldCamera={c.worldCamera?.name ?? "null"}");
+                    Debug.Log($"[LoadingUI] CanvasScaler 配置: ScaleWithScreenSize, referenceResolution=2560x1440, matchWidthOrHeight={existingScaler.matchWidthOrHeight}");
+                    Debug.Log($"[LoadingUI] 实际 Canvas sortingOrder = {_canvas.sortingOrder}, overrideSorting = {_canvas.overrideSorting}");
+
+                    // 打印当前所有 Canvas 的排序顺序，方便调试
+                    Canvas[] allCanvases = FindObjectsOfType<Canvas>();
+                    foreach (var c in allCanvases)
+                    {
+                        Debug.Log($"[LoadingUI] 发现 Canvas: {c.name}, sortingOrder={c.sortingOrder}, overrideSorting={c.overrideSorting}, renderMode={c.renderMode}, worldCamera={c.worldCamera?.name ?? "null"}");
+                    }
                 }
             }
         }
@@ -235,7 +232,7 @@ namespace HiddenCats.UI
                 Camera uiCamera = LetterboxController.Instance.GetComponent<Camera>();
                 if (uiCamera != null)
                 {
-                    Debug.Log($"[LoadingUI] 使用 LetterboxController 的相机: {uiCamera.name}");
+                    if (enableDebugLog) Debug.Log($"[LoadingUI] 使用 LetterboxController 的相机: {uiCamera.name}");
                     return uiCamera;
                 }
             }
@@ -247,13 +244,13 @@ namespace HiddenCats.UI
                 Camera cam = uiCameraObj.GetComponent<Camera>();
                 if (cam != null)
                 {
-                    Debug.Log($"[LoadingUI] 使用 UICamera (按名称查找): {uiCameraObj.name}");
+                    if (enableDebugLog) Debug.Log($"[LoadingUI] 使用 UICamera (按名称查找): {uiCameraObj.name}");
                     return cam;
                 }
             }
 
             // 最后的备选：使用 Camera.main
-            Debug.LogWarning("[LoadingUI] 未找到 UICamera，使用 Camera.main");
+            if (enableDebugLog) Debug.LogWarning("[LoadingUI] 未找到 UICamera，使用 Camera.main");
             return Camera.main;
         }
 
@@ -266,13 +263,13 @@ namespace HiddenCats.UI
             {
                 Camera newCamera = GetUICamera();
                 _canvas.worldCamera = newCamera;
-                Debug.Log($"[LoadingUI] RefreshWorldCamera: worldCamera 设置为 {newCamera?.name ?? "null"}");
+                if (enableDebugLog) Debug.Log($"[LoadingUI] RefreshWorldCamera: worldCamera 设置为 {newCamera?.name ?? "null"}");
             }
         }
 
         private void OnEnable()
         {
-            Debug.Log("[LoadingUI] OnEnable() called - 开始加载流程");
+            if (enableDebugLog) Debug.Log("[LoadingUI] OnEnable() called - 开始加载流程");
             _startTime = Time.time;
             _isLoadingComplete = false;
             _transitionStarted = false;
@@ -314,7 +311,7 @@ namespace HiddenCats.UI
             // ScreenSpaceOverlay 模式下不需要改变 Camera 背景色
             if (_canvas != null && _canvas.renderMode == RenderMode.ScreenSpaceOverlay)
             {
-                Debug.Log("[LoadingUI] ScreenSpaceOverlay 模式，不需要改变 Camera 背景色");
+                if (enableDebugLog) Debug.Log("[LoadingUI] ScreenSpaceOverlay 模式，不需要改变 Camera 背景色");
                 return;
             }
 
@@ -322,7 +319,7 @@ namespace HiddenCats.UI
             {
                 _originalCameraBackgroundColor = _cachedUICamera.backgroundColor;
                 _cachedUICamera.backgroundColor = loadingBackgroundColor;
-                Debug.Log($"[LoadingUI] 临时改变 UICamera 背景色: {_originalCameraBackgroundColor} -> {loadingBackgroundColor}");
+                if (enableDebugLog) Debug.Log($"[LoadingUI] 临时改变 UICamera 背景色: {_originalCameraBackgroundColor} -> {loadingBackgroundColor}");
             }
         }
 
@@ -341,7 +338,7 @@ namespace HiddenCats.UI
             if (_cachedUICamera != null)
             {
                 _cachedUICamera.backgroundColor = _originalCameraBackgroundColor;
-                Debug.Log($"[LoadingUI] 恢复 UICamera 背景色: {_cachedUICamera.backgroundColor}");
+                if (enableDebugLog) Debug.Log($"[LoadingUI] 恢复 UICamera 背景色: {_cachedUICamera.backgroundColor}");
             }
         }
 
@@ -394,7 +391,7 @@ namespace HiddenCats.UI
 
         private void EnterMainWindow()
         {
-            Debug.Log("[LoadingUI] EnterMainWindow() called");
+            if (enableDebugLog) Debug.Log("[LoadingUI] EnterMainWindow() called");
             if (_transitionStarted)
             {
                 Debug.LogWarning("[LoadingUI] 过渡已开始，跳过");
@@ -404,7 +401,7 @@ namespace HiddenCats.UI
 
             // 标记Loading结束，允许WindowManager处理后续切换
             WindowManager.IsInLoadingPhase = false;
-            Debug.Log("[LoadingUI] 已设置 IsInLoadingPhase = false");
+            if (enableDebugLog) Debug.Log("[LoadingUI] 已设置 IsInLoadingPhase = false");
 
             // 确保WindowManager存在
             if (WindowManager.Instance == null)
@@ -434,9 +431,9 @@ namespace HiddenCats.UI
                     config,
                     () =>
                     {
-                        // 过渡开始时隐藏Loading
+                        // 过渡开始时隐藏Loading，并切换到MainWnd（跳过过渡效果，避免重复播放）
                         gameObject.SetActive(false);
-                        WindowManager.Instance.PublicSwitchToWindow(mainWndPrefab);
+                        WindowManager.Instance.PublicSwitchToWindow(mainWndPrefab, skipTransition: true);
                     },
                     () =>
                     {
@@ -452,7 +449,7 @@ namespace HiddenCats.UI
                 RestoreOriginalBackgroundColor();
                 LetterboxController.Instance?.SetLoadingPhase(false);
                 gameObject.SetActive(false);
-                WindowManager.Instance.PublicSwitchToWindow(mainWndPrefab);
+                WindowManager.Instance.PublicSwitchToWindow(mainWndPrefab, skipTransition: true);
             }
         }
     }
